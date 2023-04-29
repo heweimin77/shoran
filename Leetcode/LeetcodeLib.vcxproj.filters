@@ -340,6 +340,9 @@
     <ClCompile Include="interview.17.25.maxRectangle.cpp">
       <Filter>todo</Filter>
     </ClCompile>
+    <ClCompile Include="1031.maxSumTwoNoOverlap.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="todo">
