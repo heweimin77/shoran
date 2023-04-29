@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Leetcode.cpp">
+      <Filter>Leetcode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gtest\gtest.cpp">
+      <Filter>Leetcode</Filter>
+    </ClCompile>
+    <ClCompile Include="cb.cpp">
+      <Filter>Leetcode</Filter>
+    </ClCompile>
+    <ClCompile Include="support.cpp">
+      <Filter>Leetcode</Filter>
+    </ClCompile>
+    <ClCompile Include="1031.maxSumTwoNoOverlap.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Leetcode">
+      <UniqueIdentifier>{9a647c5b-052a-4aa0-b5bc-29d937b3a268}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\gtest\gtest.h">
+      <Filter>Leetcode</Filter>
+    </ClInclude>
+    <ClInclude Include="support.h">
+      <Filter>Leetcode</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Readme.txt">
+      <Filter>Leetcode</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{0e351ac0-bd34-40a7-82d5-af05908e4726}</ProjectGuid>
+    <RootNamespace>LeetcodeLib</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>..\gtest</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>..\gtest</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Leetcode\3lengthOfLongestSubstring.cpp" />
+    <ClCompile Include="..\Leetcode\4findMedianSortedArrays.cpp" />
+    <ClCompile Include="..\Leetcode\5longestPalindrome.cpp" />
+    <ClCompile Include="..\Leetcode\6convert.cpp" />
+    <ClCompile Include="1000.mergeStones.cpp" />
+    <ClCompile Include="1012.numDupDigitsAtMostN.cpp" />
+    <ClCompile Include="1039.minScoreTriangulation.cpp" />
+    <ClCompile Include="1040.numMovesStonesII.cpp" />
+    <ClCompile Include="1043.maxSumAfterPartitioning.cpp" />
+    <ClCompile Include="1053.prevPermOpt1.cpp" />
+    <ClCompile Include="1092.shortestCommonSupersequence.cpp" />
+    <ClCompile Include="1096.braceExpansionII.cpp" />
+    <ClCompile Include="10isMatch.cpp" />
+    <ClCompile Include="1105.minHeightShelves.cpp" />
+    <ClCompile Include="1147.longestDecomposition.cpp" />
+    <ClCompile Include="1163.lastSubstring.cpp" />
+    <ClCompile Include="1187.makeArrayIncreasing.cpp" />
+    <ClCompile Include="11maxArea.cpp" />
+    <ClCompile Include="12intToRoman.cpp" />
+    <ClCompile Include="13romanToInt.cpp" />
+    <ClCompile Include="1590.minSubarray.cpp" />
+    <ClCompile Include="15threeSum.cpp" />
+    <ClCompile Include="1601.smallestEquivalentString.cpp" />
+    <ClCompile Include="1605.restoreMatrix.cpp" />
+    <ClCompile Include="1626.bestTeamScore.cpp" />
+    <ClCompile Include="1630.checkArithmeticSubarrays.cpp" />
+    <ClCompile Include="1638.countSubstrings.cpp" />
+    <ClCompile Include="16threeSumClosest.cpp" />
+    <ClCompile Include="2342.maximumSum.cpp" />
+    <ClCompile Include="2348.zeroFilledSubarray.cpp" />
+    <ClCompile Include="2352.equalPairs.cpp" />
+    <ClCompile Include="2353.FoodRatings.cpp" />
+    <ClCompile Include="2359.closestMeetingNode.cpp" />
+    <ClCompile Include="2364.countBadPairs.cpp" />
+    <ClCompile Include="2368.reachableNodes.cpp" />
+    <ClCompile Include="2369.validPartition.cpp" />
+    <ClCompile Include="2370.longestIdealString.cpp" />
+    <ClCompile Include="2375.smallestNumber.cpp" />
+    <ClCompile Include="2385.amountOfTime.cpp" />
+    <ClCompile Include="2391.garbageCollection.cpp" />
+    <ClCompile Include="2397.maximumRows.cpp" />
+    <ClCompile Include="2400.numberOfWays.cpp" />
+    <ClCompile Include="2401.longestNiceSubarray.cpp" />
+    <ClCompile Include="2406.minGroups.cpp" />
+    <ClCompile Include="2410.matchPlayersAndTrainers.cpp" />
+    <ClCompile Include="2411.smallestSubarrays.cpp" />
+    <ClCompile Include="2420.goodIndices.cpp" />
+    <ClCompile Include="2428.maxSum.cpp" />
+    <ClCompile Include="2429.minimizeXor.cpp" />
+    <ClCompile Include="2434.robotWithString.cpp" />
+    <ClCompile Include="2438.productQueries.cpp" />
+    <ClCompile Include="2443.sumOfNumberAndReverse.cpp" />
+    <ClCompile Include="2447.subarrayGCD.cpp" />
+    <ClCompile Include="2451.oddString.cpp" />
+    <ClCompile Include="2452.twoEditWords.cpp" />
+    <ClCompile Include="2453.destroyTargets.cpp" />
+    <ClCompile Include="2456.mostPopularCreator.cpp" />
+    <ClCompile Include="2457.makeIntegerBeautiful.cpp" />
+    <ClCompile Include="2461.maximumSubarraySum.cpp" />
+    <ClCompile Include="2462.totalCost.cpp" />
+    <ClCompile Include="2466.countGoodStrings.cpp" />
+    <ClCompile Include="2467.mostProfitablePath.cpp" />
+    <ClCompile Include="2470.subarrayLCM.cpp" />
+    <ClCompile Include="2477.minimumFuelCost.cpp" />
+    <ClCompile Include="2488.countSubarrays.cpp" />
+    <ClCompile Include="2498.maxJump.cpp" />
+    <ClCompile Include="2501.longestSquareStreak.cpp" />
+    <ClCompile Include="2502.Allocator.cpp" />
+    <ClCompile Include="2512.topStudents.cpp" />
+    <ClCompile Include="2513.minimizeSet.cpp" />
+    <ClCompile Include="2516.takeCharacters.cpp" />
+    <ClCompile Include="2517.maximumTastiness.cpp" />
+    <ClCompile Include="2521.distinctPrimeFactors.cpp" />
+    <ClCompile Include="2522.minimumPartition.cpp" />
+    <ClCompile Include="2523.closestPrimes.cpp" />
+    <ClCompile Include="2527.xorBeauty.cpp" />
+    <ClCompile Include="2536.rangeAddQueries.cpp" />
+    <ClCompile Include="2537.countGood.cpp" />
+    <ClCompile Include="2563.countFairPairs.cpp" />
+    <ClCompile Include="2564.countFairPairs.cpp" />
+    <ClCompile Include="2566.minMaxDifference.cpp" />
+    <ClCompile Include="2567.minimizeSum.cpp" />
+    <ClCompile Include="2571.minOperations.cpp" />
+    <ClCompile Include="2572.squareFreeSubsets.cpp" />
+    <ClCompile Include="2580.countWays.cpp" />
+    <ClCompile Include="2593.findScore.cpp" />
+    <ClCompile Include="2594.repairCars.cpp" />
+    <ClCompile Include="2597.beautifulSubsets.cpp" />
+    <ClCompile Include="2601.primeSubOperation.cpp" />
+    <ClCompile Include="2602.minOperations.cpp" />
+    <ClCompile Include="2607.makeSubKSumEqual.cpp" />
+    <ClCompile Include="2611.miceAndCheese.cpp" />
+    <ClCompile Include="2615.distance.cpp" />
+    <ClCompile Include="2616.minimizeMax.cpp" />
+    <ClCompile Include="8myAtoi.cpp" />
+    <ClCompile Include="9isPalindrome.cpp" />
+    <ClCompile Include="interview.16.13.cutSquares.cpp" />
+    <ClCompile Include="interview.17.25.maxRectangle.cpp" />
+    <ClCompile Include="lcp.04.domino.cpp" />
+    <ClCompile Include="lcp.05.LeetCoin.cpp" />
+    <ClCompile Include="lcp.13.minimalSteps.cpp" />
+    <ClCompile Include="lcp.14.splitArray.cpp" />
+    <ClCompile Include="lcp.20.busRapidTransit.cpp" />
+    <ClCompile Include="lcp.71.reservoir.cpp" />
+    <ClCompile Include="lcp.72.supplyWagon.cpp" />
+    <ClCompile Include="lcp.74.fieldOfGreatestBlessing.cpp" />
+    <ClCompile Include="lcp54.minimumCost.cpp" />
+    <ClCompile Include="lcp58.composeCube.cpp" />
+    <ClCompile Include="lcp59.buildBridge.cpp" />
+    <ClCompile Include="lcp60.getMaxLayerSum.cpp" />
+    <ClCompile Include="lcp63.ballGame.cpp" />
+    <ClCompile Include="lcp65.unSuitability.cpp" />
+    <ClCompile Include="lcp69.Leetcode.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
