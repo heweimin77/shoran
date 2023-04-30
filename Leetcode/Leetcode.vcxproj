@@ -143,7 +143,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\gtest\gtest.cpp" />
-    <ClCompile Include="1031.maxSumTwoNoOverlap.cpp" />
+    <ClCompile Include="6404.countOperationsToEmptyArray.cpp" />
     <ClCompile Include="cb.cpp" />
     <ClCompile Include="Leetcode.cpp" />
     <ClCompile Include="support.cpp" />

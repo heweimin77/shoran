@@ -147,6 +147,7 @@
     <ClCompile Include="..\Leetcode\6convert.cpp" />
     <ClCompile Include="1000.mergeStones.cpp" />
     <ClCompile Include="1012.numDupDigitsAtMostN.cpp" />
+    <ClCompile Include="1031.maxSumTwoNoOverlap.cpp" />
     <ClCompile Include="1039.minScoreTriangulation.cpp" />
     <ClCompile Include="1040.numMovesStonesII.cpp" />
     <ClCompile Include="1043.maxSumAfterPartitioning.cpp" />
