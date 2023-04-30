@@ -159,6 +159,7 @@
     <ClCompile Include="1147.longestDecomposition.cpp" />
     <ClCompile Include="1163.lastSubstring.cpp" />
     <ClCompile Include="1187.makeArrayIncreasing.cpp" />
+    <ClCompile Include="1192.criticalConnections.cpp" />
     <ClCompile Include="11maxArea.cpp" />
     <ClCompile Include="12intToRoman.cpp" />
     <ClCompile Include="13romanToInt.cpp" />
