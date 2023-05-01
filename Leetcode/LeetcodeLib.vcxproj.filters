@@ -337,9 +337,6 @@
     <ClCompile Include="1163.lastSubstring.cpp">
       <Filter>done</Filter>
     </ClCompile>
-    <ClCompile Include="interview.17.25.maxRectangle.cpp">
-      <Filter>todo</Filter>
-    </ClCompile>
     <ClCompile Include="1031.maxSumTwoNoOverlap.cpp">
       <Filter>done</Filter>
     </ClCompile>
@@ -352,6 +349,16 @@
     <ClCompile Include="lcp.76.getSchemeCount.cpp">
       <Filter>done</Filter>
     </ClCompile>
+    <ClCompile Include="1376.numOfMinutes.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="interview.17.25.maxRectangle.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="lcp.75.challengeOfTheKeeper.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="lcp.53.defendSpaceCity.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="todo">

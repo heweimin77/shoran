@@ -162,6 +162,7 @@
     <ClCompile Include="1192.criticalConnections.cpp" />
     <ClCompile Include="11maxArea.cpp" />
     <ClCompile Include="12intToRoman.cpp" />
+    <ClCompile Include="1376.numOfMinutes.cpp" />
     <ClCompile Include="13romanToInt.cpp" />
     <ClCompile Include="1590.minSubarray.cpp" />
     <ClCompile Include="15threeSum.cpp" />
@@ -247,9 +248,11 @@
     <ClCompile Include="lcp.13.minimalSteps.cpp" />
     <ClCompile Include="lcp.14.splitArray.cpp" />
     <ClCompile Include="lcp.20.busRapidTransit.cpp" />
+    <ClCompile Include="lcp.53.defendSpaceCity.cpp" />
     <ClCompile Include="lcp.71.reservoir.cpp" />
     <ClCompile Include="lcp.72.supplyWagon.cpp" />
     <ClCompile Include="lcp.74.fieldOfGreatestBlessing.cpp" />
+    <ClCompile Include="lcp.75.challengeOfTheKeeper.cpp" />
     <ClCompile Include="lcp.76.getSchemeCount.cpp" />
     <ClCompile Include="lcp54.minimumCost.cpp" />
     <ClCompile Include="lcp58.composeCube.cpp" />
