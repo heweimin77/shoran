@@ -266,6 +266,18 @@ private:
 
 // Tarjan算法
 // 求桥，edge(u,v) dfn[n] < low[v] 或者 dfn[v] < low[v]
+void tarjan_bridge(vector<vector<int>> &adjs, int i, int pre, vector<int> &dfn, vector<int> &low, int &stamp)
+{
+    dfn[i] = low[i] = stamp++;
+    for (auto next : adjs[i]) {
+        if (next == pre) continue;
+        if (dfn[next] == 0) {
+            tarjan_bridge(adjs, next, i, dfn, low, stamp);
+        }
+        low[i] = min(low[i], low[next]);
+    }
+}
+
 vector<vector<int>> tarjan_for_bridge(int n, vector<vector<int>> &connections)
 {
     vector<vector<int>> adjs(n);
@@ -291,17 +303,7 @@ vector<vector<int>> tarjan_for_bridge(int n, vector<vector<int>> &connections)
     }
     return results;
 }
-void tarjan_bridge(vector<vector<int>> &adjs, int i, int pre, vector<int> &dfn, vector<int> &low, int &stamp)
-{
-    dfn[i] = low[i] = stamp++;
-    for (auto next : adjs[i]) {
-        if (next == pre) continue;
-        if (dfn[next] == 0) {
-            tarjan_bridge(adjs, next, i, dfn, low, stamp);
-        }
-        low[i] = min(low[i], low[next]);
-    }
-}
+
 
 
 

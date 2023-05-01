@@ -346,6 +346,12 @@
     <ClCompile Include="1192.criticalConnections.cpp">
       <Filter>done</Filter>
     </ClCompile>
+    <ClCompile Include="6404.countOperationsToEmptyArray.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="lcp.76.getSchemeCount.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="todo">

@@ -5,9 +5,9 @@
 
 int main()
 {
-    //GTEST_RUN_ALL_CASE_FILTER("TestSolution.");
+    GTEST_RUN_ALL_CASE_FILTER("TestSolution.Test");
 
-    GTEST_RUN_ALL_CASE();
+    //GTEST_RUN_ALL_CASE();
 
     return 0;
 }
