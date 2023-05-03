@@ -358,7 +358,15 @@
     <ClCompile Include="lcp.75.challengeOfTheKeeper.cpp">
       <Filter>done</Filter>
     </ClCompile>
-    <ClCompile Include="lcp.53.defendSpaceCity.cpp" />
+    <ClCompile Include="lcp.53.defendSpaceCity.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="1003.isValid.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="lcp.49.ringGame.cpp">
+      <Filter>todo</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="todo">

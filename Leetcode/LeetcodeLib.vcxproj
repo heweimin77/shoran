@@ -146,6 +146,7 @@
     <ClCompile Include="..\Leetcode\5longestPalindrome.cpp" />
     <ClCompile Include="..\Leetcode\6convert.cpp" />
     <ClCompile Include="1000.mergeStones.cpp" />
+    <ClCompile Include="1003.isValid.cpp" />
     <ClCompile Include="1012.numDupDigitsAtMostN.cpp" />
     <ClCompile Include="1031.maxSumTwoNoOverlap.cpp" />
     <ClCompile Include="1039.minScoreTriangulation.cpp" />
@@ -248,6 +249,7 @@
     <ClCompile Include="lcp.13.minimalSteps.cpp" />
     <ClCompile Include="lcp.14.splitArray.cpp" />
     <ClCompile Include="lcp.20.busRapidTransit.cpp" />
+    <ClCompile Include="lcp.49.ringGame.cpp" />
     <ClCompile Include="lcp.53.defendSpaceCity.cpp" />
     <ClCompile Include="lcp.71.reservoir.cpp" />
     <ClCompile Include="lcp.72.supplyWagon.cpp" />
