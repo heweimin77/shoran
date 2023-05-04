@@ -367,6 +367,7 @@
     <ClCompile Include="lcp.49.ringGame.cpp">
       <Filter>todo</Filter>
     </ClCompile>
+    <ClCompile Include="2106.maxTotalFruits.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="todo">
