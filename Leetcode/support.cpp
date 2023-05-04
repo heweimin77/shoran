@@ -30,3 +30,45 @@ void destroyTree(TreeNode* root) {
     destroyTree(root->right);
     delete root;
 }
+
+FileUtil::FileUtil() : ifs("E:\\data.txt") {
+
+}
+
+FileUtil::~FileUtil() {
+
+}
+
+void FileUtil::ReadIntVector(vector<int>& out, bool tag) {
+    if (!tag) {
+        ReadChar(); // [
+    }
+    char sep;
+    int value = 0;
+    do {
+        ifs >> value;
+        out.push_back(value);
+        sep = ReadChar();
+    } while (sep != ']');
+}
+
+void FileUtil::ReadIntVectorVector(vector<vector<int>>& out) {
+    ReadChar();
+    char ch = ReadChar(); // [
+    while (ch == '[') {
+        out.push_back({});
+        ReadIntVector(out.back(), true);
+        ch = ReadChar();
+        if (ch == ']') break;
+        ch = ReadChar(); // [
+    }
+
+}
+
+char FileUtil::ReadChar() {
+    char ch = 0;
+    do {
+        ifs >> ch;
+    } while (ch == ' ' || ch == '\t' || ch == '\n' || ch == '\r');
+    return ch;
+}

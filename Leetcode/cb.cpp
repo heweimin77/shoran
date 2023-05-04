@@ -262,49 +262,4 @@ private:
     BinaryIndexedTree diff;
     BinaryIndexedTree idiff;
 };
-
-
-// Tarjan算法
-// 求桥，edge(u,v) dfn[n] < low[v] 或者 dfn[v] < low[v]
-void tarjan_bridge(vector<vector<int>> &adjs, int i, int pre, vector<int> &dfn, vector<int> &low, int &stamp)
-{
-    dfn[i] = low[i] = stamp++;
-    for (auto next : adjs[i]) {
-        if (next == pre) continue;
-        if (dfn[next] == 0) {
-            tarjan_bridge(adjs, next, i, dfn, low, stamp);
-        }
-        low[i] = min(low[i], low[next]);
-    }
-}
-
-vector<vector<int>> tarjan_for_bridge(int n, vector<vector<int>> &connections)
-{
-    vector<vector<int>> adjs(n);
-    for (auto &e : connections) {
-        adjs[e[0]].push_back(e[1]);
-        adjs[e[1]].push_back(e[0]);
-    }
-
-    vector<int> dfn(n);
-    vector<int> low(n);
-    int stamp = 1;
-    for (int i = 0; i < n; ++i) {
-        if (dfn[i] > 0) continue;
-        tarjan_bridge(adjs, 0, -1, dfn, low, stamp);
-    }
-
-
-    vector<vector<int>> results;
-    for (auto &e : connections) {
-        if (dfn[e[0]] < low[e[1]] || dfn[e[1]] < low[e[0]]) {
-            results.push_back(e);
-        }
-    }
-    return results;
-}
-
-
-
-
 }
