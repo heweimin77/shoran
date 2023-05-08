@@ -162,6 +162,7 @@
     <ClCompile Include="1187.makeArrayIncreasing.cpp" />
     <ClCompile Include="1192.criticalConnections.cpp" />
     <ClCompile Include="11maxArea.cpp" />
+    <ClCompile Include="1263.minPushBox.cpp" />
     <ClCompile Include="12intToRoman.cpp" />
     <ClCompile Include="1376.numOfMinutes.cpp" />
     <ClCompile Include="13romanToInt.cpp" />
@@ -195,6 +196,7 @@
     <ClCompile Include="2420.goodIndices.cpp" />
     <ClCompile Include="2428.maxSum.cpp" />
     <ClCompile Include="2429.minimizeXor.cpp" />
+    <ClCompile Include="2432.hardestWorker.cpp" />
     <ClCompile Include="2434.robotWithString.cpp" />
     <ClCompile Include="2438.productQueries.cpp" />
     <ClCompile Include="2443.sumOfNumberAndReverse.cpp" />
@@ -250,7 +252,6 @@
     <ClCompile Include="lcp.13.minimalSteps.cpp" />
     <ClCompile Include="lcp.14.splitArray.cpp" />
     <ClCompile Include="lcp.20.busRapidTransit.cpp" />
-    <ClCompile Include="lcp.49.ringGame.cpp" />
     <ClCompile Include="lcp.53.defendSpaceCity.cpp" />
     <ClCompile Include="lcp.71.reservoir.cpp" />
     <ClCompile Include="lcp.72.supplyWagon.cpp" />

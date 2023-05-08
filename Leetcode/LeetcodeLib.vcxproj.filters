@@ -364,10 +364,15 @@
     <ClCompile Include="1003.isValid.cpp">
       <Filter>done</Filter>
     </ClCompile>
-    <ClCompile Include="lcp.49.ringGame.cpp">
-      <Filter>todo</Filter>
+    <ClCompile Include="2106.maxTotalFruits.cpp">
+      <Filter>done</Filter>
     </ClCompile>
-    <ClCompile Include="2106.maxTotalFruits.cpp" />
+    <ClCompile Include="2432.hardestWorker.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="1263.minPushBox.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="todo">
