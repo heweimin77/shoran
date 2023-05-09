@@ -242,6 +242,8 @@
     <ClCompile Include="2611.miceAndCheese.cpp" />
     <ClCompile Include="2615.distance.cpp" />
     <ClCompile Include="2616.minimizeMax.cpp" />
+    <ClCompile Include="2661.firstCompleteIndex.cpp" />
+    <ClCompile Include="2662.minimumCost.cpp" />
     <ClCompile Include="6404.countOperationsToEmptyArray.cpp" />
     <ClCompile Include="8myAtoi.cpp" />
     <ClCompile Include="9isPalindrome.cpp" />
@@ -252,6 +254,7 @@
     <ClCompile Include="lcp.13.minimalSteps.cpp" />
     <ClCompile Include="lcp.14.splitArray.cpp" />
     <ClCompile Include="lcp.20.busRapidTransit.cpp" />
+    <ClCompile Include="lcp.49.ringGame.cpp" />
     <ClCompile Include="lcp.53.defendSpaceCity.cpp" />
     <ClCompile Include="lcp.71.reservoir.cpp" />
     <ClCompile Include="lcp.72.supplyWagon.cpp" />

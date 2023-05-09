@@ -144,7 +144,7 @@
   <ItemGroup>
     <ClCompile Include="..\gtest\gtest.cpp" />
     <ClCompile Include="cb.cpp" />
-    <ClCompile Include="lcp.49.ringGame.cpp" />
+    <ClCompile Include="lcp.79.extractMantra.cpp" />
     <ClCompile Include="Leetcode.cpp" />
     <ClCompile Include="support.cpp" />
   </ItemGroup>

@@ -373,6 +373,15 @@
     <ClCompile Include="1263.minPushBox.cpp">
       <Filter>done</Filter>
     </ClCompile>
+    <ClCompile Include="lcp.49.ringGame.cpp">
+      <Filter>todo</Filter>
+    </ClCompile>
+    <ClCompile Include="2661.firstCompleteIndex.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2662.minimumCost.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="todo">
