@@ -143,8 +143,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\gtest\gtest.cpp" />
+    <ClCompile Include="1330.maxValueAfterReverse.cpp" />
     <ClCompile Include="cb.cpp" />
-    <ClCompile Include="lcp.79.extractMantra.cpp" />
     <ClCompile Include="Leetcode.cpp" />
     <ClCompile Include="support.cpp" />
   </ItemGroup>

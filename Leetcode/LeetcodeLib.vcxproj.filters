@@ -382,6 +382,15 @@
     <ClCompile Include="2662.minimumCost.cpp">
       <Filter>done</Filter>
     </ClCompile>
+    <ClCompile Include="lcp.79.extractMantra.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="lcp.82.treeOfInfiniteSouls.cpp">
+      <Filter>todo</Filter>
+    </ClCompile>
+    <ClCompile Include="lcp.81.getNandResult.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="todo">

@@ -27,6 +27,15 @@ long long fast_power(long long base, long long n, long long module) {
     return result;
 }
 
+// https://oi-wiki.org/math/number-theory/inverse/ 逆元
+// a * x = 1 (mod p) 则x 是a的逆元
+// a * x = a^(p - 1) (mod p) 费马小定理
+// x     = a^(p - 2) (mod p) 
+// 要求；ｐ是质数，a,p互质
+long long invert(long long a, long long p) {
+    return fast_power(a, p - 2, p);
+}
+
 int combination(int n, int m, int MOD)
 {
     vector<int> results(m + 1);

@@ -7,7 +7,7 @@ int main()
 {
     //单跑TestMain用例，全跑为Test用例
     //GTEST_RUN_ALL_CASE_FILTER("TestSolution.Test");
-    GTEST_RUN_ALL_CASE_FILTER("TestSolution.TestMain");
+    GTEST_RUN_ALL_CASE_FILTER("TestSolution.Test");
 
     //GTEST_RUN_ALL_CASE();
 
