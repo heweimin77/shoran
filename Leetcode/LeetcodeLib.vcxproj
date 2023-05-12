@@ -164,6 +164,7 @@
     <ClCompile Include="11maxArea.cpp" />
     <ClCompile Include="1263.minPushBox.cpp" />
     <ClCompile Include="12intToRoman.cpp" />
+    <ClCompile Include="1330.maxValueAfterReverse.cpp" />
     <ClCompile Include="1376.numOfMinutes.cpp" />
     <ClCompile Include="13romanToInt.cpp" />
     <ClCompile Include="1590.minSubarray.cpp" />

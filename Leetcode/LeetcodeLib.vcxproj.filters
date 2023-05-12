@@ -391,6 +391,9 @@
     <ClCompile Include="lcp.81.getNandResult.cpp">
       <Filter>done</Filter>
     </ClCompile>
+    <ClCompile Include="1330.maxValueAfterReverse.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="todo">
