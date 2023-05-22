@@ -13,7 +13,7 @@
     <ClCompile Include="support.cpp">
       <Filter>Leetcode</Filter>
     </ClCompile>
-    <ClCompile Include="lcp.80.evolutionaryRecord.cpp" />
+    <ClCompile Include="lcp.42.circleGame.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Leetcode">
@@ -24,9 +24,7 @@
     <ClInclude Include="..\gtest\gtest.h">
       <Filter>Leetcode</Filter>
     </ClInclude>
-    <ClInclude Include="support.h">
-      <Filter>Leetcode</Filter>
-    </ClInclude>
+    <ClInclude Include="support.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="Readme.txt" />

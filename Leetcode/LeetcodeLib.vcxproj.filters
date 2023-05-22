@@ -394,6 +394,21 @@
     <ClCompile Include="1330.maxValueAfterReverse.cpp">
       <Filter>done</Filter>
     </ClCompile>
+    <ClCompile Include="lcp.80.evolutionaryRecord.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="1373.maxSumBST.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2681.sumOfPower.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2684.maxMoves.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2685.countCompleteComponents.cpp">
+      <Filter>todo</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="todo">
