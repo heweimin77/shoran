@@ -153,6 +153,9 @@
     <ClCompile Include="1040.numMovesStonesII.cpp" />
     <ClCompile Include="1043.maxSumAfterPartitioning.cpp" />
     <ClCompile Include="1053.prevPermOpt1.cpp" />
+    <ClCompile Include="1072.maxEqualRowsAfterFlips.cpp" />
+    <ClCompile Include="1073.addNegabinary.cpp" />
+    <ClCompile Include="1079.numTilePossibilities.cpp" />
     <ClCompile Include="1092.shortestCommonSupersequence.cpp" />
     <ClCompile Include="1096.braceExpansionII.cpp" />
     <ClCompile Include="10isMatch.cpp" />
@@ -165,6 +168,7 @@
     <ClCompile Include="1263.minPushBox.cpp" />
     <ClCompile Include="12intToRoman.cpp" />
     <ClCompile Include="1330.maxValueAfterReverse.cpp" />
+    <ClCompile Include="1335.minDifficulty.cpp" />
     <ClCompile Include="1373.maxSumBST.cpp" />
     <ClCompile Include="1376.numOfMinutes.cpp" />
     <ClCompile Include="13romanToInt.cpp" />
@@ -202,6 +206,7 @@
     <ClCompile Include="2434.robotWithString.cpp" />
     <ClCompile Include="2438.productQueries.cpp" />
     <ClCompile Include="2443.sumOfNumberAndReverse.cpp" />
+    <ClCompile Include="2446.haveConflict.cpp" />
     <ClCompile Include="2447.subarrayGCD.cpp" />
     <ClCompile Include="2451.oddString.cpp" />
     <ClCompile Include="2452.twoEditWords.cpp" />

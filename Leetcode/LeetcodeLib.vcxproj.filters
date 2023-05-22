@@ -409,6 +409,21 @@
     <ClCompile Include="2685.countCompleteComponents.cpp">
       <Filter>todo</Filter>
     </ClCompile>
+    <ClCompile Include="1072.maxEqualRowsAfterFlips.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="1073.addNegabinary.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="1079.numTilePossibilities.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="1335.minDifficulty.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2446.haveConflict.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="todo">
