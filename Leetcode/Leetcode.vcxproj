@@ -143,8 +143,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\gtest\gtest.cpp" />
+    <ClCompile Include="1091.shortestPathBinaryMatrix.cpp" />
     <ClCompile Include="cb.cpp" />
-    <ClCompile Include="lcp.42.circleGame.cpp" />
     <ClCompile Include="Leetcode.cpp" />
     <ClCompile Include="support.cpp" />
   </ItemGroup>

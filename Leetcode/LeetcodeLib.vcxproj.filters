@@ -424,6 +424,18 @@
     <ClCompile Include="2446.haveConflict.cpp">
       <Filter>done</Filter>
     </ClCompile>
+    <ClCompile Include="lcp.42.circleGame.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="1080.sufficientSubset.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="1090.largestValsFromLabels.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="1377.frogPosition.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="todo">

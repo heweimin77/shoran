@@ -156,6 +156,8 @@
     <ClCompile Include="1072.maxEqualRowsAfterFlips.cpp" />
     <ClCompile Include="1073.addNegabinary.cpp" />
     <ClCompile Include="1079.numTilePossibilities.cpp" />
+    <ClCompile Include="1080.sufficientSubset.cpp" />
+    <ClCompile Include="1090.largestValsFromLabels.cpp" />
     <ClCompile Include="1092.shortestCommonSupersequence.cpp" />
     <ClCompile Include="1096.braceExpansionII.cpp" />
     <ClCompile Include="10isMatch.cpp" />
@@ -171,6 +173,7 @@
     <ClCompile Include="1335.minDifficulty.cpp" />
     <ClCompile Include="1373.maxSumBST.cpp" />
     <ClCompile Include="1376.numOfMinutes.cpp" />
+    <ClCompile Include="1377.frogPosition.cpp" />
     <ClCompile Include="13romanToInt.cpp" />
     <ClCompile Include="1590.minSubarray.cpp" />
     <ClCompile Include="15threeSum.cpp" />
@@ -264,6 +267,7 @@
     <ClCompile Include="lcp.13.minimalSteps.cpp" />
     <ClCompile Include="lcp.14.splitArray.cpp" />
     <ClCompile Include="lcp.20.busRapidTransit.cpp" />
+    <ClCompile Include="lcp.42.circleGame.cpp" />
     <ClCompile Include="lcp.49.ringGame.cpp" />
     <ClCompile Include="lcp.53.defendSpaceCity.cpp" />
     <ClCompile Include="lcp.71.reservoir.cpp" />
