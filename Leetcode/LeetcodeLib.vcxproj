@@ -158,6 +158,7 @@
     <ClCompile Include="1079.numTilePossibilities.cpp" />
     <ClCompile Include="1080.sufficientSubset.cpp" />
     <ClCompile Include="1090.largestValsFromLabels.cpp" />
+    <ClCompile Include="1091.shortestPathBinaryMatrix.cpp" />
     <ClCompile Include="1092.shortestCommonSupersequence.cpp" />
     <ClCompile Include="1096.braceExpansionII.cpp" />
     <ClCompile Include="10isMatch.cpp" />

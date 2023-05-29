@@ -436,6 +436,9 @@
     <ClCompile Include="1377.frogPosition.cpp">
       <Filter>done</Filter>
     </ClCompile>
+    <ClCompile Include="1091.shortestPathBinaryMatrix.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="todo">
