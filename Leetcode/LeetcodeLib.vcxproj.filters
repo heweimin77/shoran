@@ -439,6 +439,15 @@
     <ClCompile Include="1091.shortestPathBinaryMatrix.cpp">
       <Filter>done</Filter>
     </ClCompile>
+    <ClCompile Include="1439.kthSmallest.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="1130.mctFromLeafValues.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2709.canTraverseAllPairs.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="todo">
@@ -447,5 +456,10 @@
     <Filter Include="done">
       <UniqueIdentifier>{4c409bba-0e77-455c-8dc9-806fcdd73838}</UniqueIdentifier>
     </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Readme.txt">
+      <Filter>done</Filter>
+    </Text>
   </ItemGroup>
 </Project>

@@ -143,7 +143,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\gtest\gtest.cpp" />
-    <ClCompile Include="1439.kthSmallest.cpp" />
+    <ClCompile Include="2699.modifiedGraphEdges.cpp" />
     <ClCompile Include="cb.cpp" />
     <ClCompile Include="Leetcode.cpp" />
     <ClCompile Include="support.cpp" />
@@ -151,9 +151,6 @@
   <ItemGroup>
     <ClInclude Include="..\gtest\gtest.h" />
     <ClInclude Include="support.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="Readme.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

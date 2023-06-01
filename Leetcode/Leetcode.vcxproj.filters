@@ -13,7 +13,7 @@
     <ClCompile Include="support.cpp">
       <Filter>Leetcode</Filter>
     </ClCompile>
-    <ClCompile Include="1439.kthSmallest.cpp" />
+    <ClCompile Include="2699.modifiedGraphEdges.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Leetcode">
@@ -25,8 +25,5 @@
       <Filter>Leetcode</Filter>
     </ClInclude>
     <ClInclude Include="support.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="Readme.txt" />
   </ItemGroup>
 </Project>

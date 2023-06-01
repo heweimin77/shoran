@@ -163,6 +163,7 @@
     <ClCompile Include="1096.braceExpansionII.cpp" />
     <ClCompile Include="10isMatch.cpp" />
     <ClCompile Include="1105.minHeightShelves.cpp" />
+    <ClCompile Include="1130.mctFromLeafValues.cpp" />
     <ClCompile Include="1147.longestDecomposition.cpp" />
     <ClCompile Include="1163.lastSubstring.cpp" />
     <ClCompile Include="1187.makeArrayIncreasing.cpp" />
@@ -176,6 +177,7 @@
     <ClCompile Include="1376.numOfMinutes.cpp" />
     <ClCompile Include="1377.frogPosition.cpp" />
     <ClCompile Include="13romanToInt.cpp" />
+    <ClCompile Include="1439.kthSmallest.cpp" />
     <ClCompile Include="1590.minSubarray.cpp" />
     <ClCompile Include="15threeSum.cpp" />
     <ClCompile Include="1601.smallestEquivalentString.cpp" />
@@ -258,6 +260,7 @@
     <ClCompile Include="2681.sumOfPower.cpp" />
     <ClCompile Include="2684.maxMoves.cpp" />
     <ClCompile Include="2685.countCompleteComponents.cpp" />
+    <ClCompile Include="2709.canTraverseAllPairs.cpp" />
     <ClCompile Include="6404.countOperationsToEmptyArray.cpp" />
     <ClCompile Include="8myAtoi.cpp" />
     <ClCompile Include="9isPalindrome.cpp" />
@@ -287,6 +290,9 @@
     <ClCompile Include="lcp63.ballGame.cpp" />
     <ClCompile Include="lcp65.unSuitability.cpp" />
     <ClCompile Include="lcp69.Leetcode.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Readme.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
