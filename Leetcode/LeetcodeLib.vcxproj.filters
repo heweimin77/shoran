@@ -448,6 +448,9 @@
     <ClCompile Include="2709.canTraverseAllPairs.cpp">
       <Filter>done</Filter>
     </ClCompile>
+    <ClCompile Include="1156.maxRepOpt1.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="todo">

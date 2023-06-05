@@ -143,8 +143,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\gtest\gtest.cpp" />
-    <ClCompile Include="2699.modifiedGraphEdges.cpp" />
     <ClCompile Include="cb.cpp" />
+    <ClCompile Include="lcp.15.visitOrder.cpp" />
     <ClCompile Include="Leetcode.cpp" />
     <ClCompile Include="support.cpp" />
   </ItemGroup>

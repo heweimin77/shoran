@@ -165,6 +165,7 @@
     <ClCompile Include="1105.minHeightShelves.cpp" />
     <ClCompile Include="1130.mctFromLeafValues.cpp" />
     <ClCompile Include="1147.longestDecomposition.cpp" />
+    <ClCompile Include="1156.maxRepOpt1.cpp" />
     <ClCompile Include="1163.lastSubstring.cpp" />
     <ClCompile Include="1187.makeArrayIncreasing.cpp" />
     <ClCompile Include="1192.criticalConnections.cpp" />
