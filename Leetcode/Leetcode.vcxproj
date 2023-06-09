@@ -143,14 +143,17 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\gtest\gtest.cpp" />
+    <ClCompile Include="2352.equalPairs.cpp" />
     <ClCompile Include="cb.cpp" />
-    <ClCompile Include="lcp.15.visitOrder.cpp" />
     <ClCompile Include="Leetcode.cpp" />
     <ClCompile Include="support.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\gtest\gtest.h" />
     <ClInclude Include="support.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Readme.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -184,9 +184,6 @@
     <ClCompile Include="2348.zeroFilledSubarray.cpp">
       <Filter>done</Filter>
     </ClCompile>
-    <ClCompile Include="2352.equalPairs.cpp">
-      <Filter>done</Filter>
-    </ClCompile>
     <ClCompile Include="2353.FoodRatings.cpp">
       <Filter>done</Filter>
     </ClCompile>
@@ -449,6 +446,12 @@
       <Filter>done</Filter>
     </ClCompile>
     <ClCompile Include="1156.maxRepOpt1.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="lcp.15.visitOrder.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2719.count.cpp">
       <Filter>done</Filter>
     </ClCompile>
   </ItemGroup>

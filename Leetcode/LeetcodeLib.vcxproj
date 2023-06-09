@@ -190,7 +190,6 @@
     <ClCompile Include="2106.maxTotalFruits.cpp" />
     <ClCompile Include="2342.maximumSum.cpp" />
     <ClCompile Include="2348.zeroFilledSubarray.cpp" />
-    <ClCompile Include="2352.equalPairs.cpp" />
     <ClCompile Include="2353.FoodRatings.cpp" />
     <ClCompile Include="2359.closestMeetingNode.cpp" />
     <ClCompile Include="2364.countBadPairs.cpp" />
@@ -262,6 +261,7 @@
     <ClCompile Include="2684.maxMoves.cpp" />
     <ClCompile Include="2685.countCompleteComponents.cpp" />
     <ClCompile Include="2709.canTraverseAllPairs.cpp" />
+    <ClCompile Include="2719.count.cpp" />
     <ClCompile Include="6404.countOperationsToEmptyArray.cpp" />
     <ClCompile Include="8myAtoi.cpp" />
     <ClCompile Include="9isPalindrome.cpp" />
@@ -271,6 +271,7 @@
     <ClCompile Include="lcp.05.LeetCoin.cpp" />
     <ClCompile Include="lcp.13.minimalSteps.cpp" />
     <ClCompile Include="lcp.14.splitArray.cpp" />
+    <ClCompile Include="lcp.15.visitOrder.cpp" />
     <ClCompile Include="lcp.20.busRapidTransit.cpp" />
     <ClCompile Include="lcp.42.circleGame.cpp" />
     <ClCompile Include="lcp.49.ringGame.cpp" />

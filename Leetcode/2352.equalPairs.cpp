@@ -19,6 +19,26 @@ namespace {
 
 class Solution {
 public:
+    int equalPairs(vector<vector<int>>& grid) {
+        int n = grid.size();
+        map<vector<int>, int> counts;
+        for (auto& line : grid) {
+            ++counts[line];
+        }
+        int result = 0;
+        vector<int> col(n);
+        for (int i = 0; i < n; ++i) {
+            for (int j = 0; j < n; ++j) {
+                col[j] = grid[j][i];
+            }
+            result += counts[col];
+        }
+        return result;
+    }
+};
+
+class Solution2OK {
+public:
     int equalPairs(vector<vector<int>> &grid)
     {   
         int n = grid.size();
@@ -46,7 +66,7 @@ public:
     }
 };
 
-TEST_F(TestSolution, Test1)
+TEST_F(TestSolution, TestMain)
 {
     vector<vector<int>> grid = {{3, 2, 1}, {1, 7, 6}, {2, 7, 7}};
     Solution s;
