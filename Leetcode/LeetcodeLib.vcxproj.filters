@@ -454,6 +454,9 @@
     <ClCompile Include="2719.count.cpp">
       <Filter>done</Filter>
     </ClCompile>
+    <ClCompile Include="2352.equalPairs.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="todo">

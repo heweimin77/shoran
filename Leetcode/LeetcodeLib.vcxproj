@@ -190,6 +190,7 @@
     <ClCompile Include="2106.maxTotalFruits.cpp" />
     <ClCompile Include="2342.maximumSum.cpp" />
     <ClCompile Include="2348.zeroFilledSubarray.cpp" />
+    <ClCompile Include="2352.equalPairs.cpp" />
     <ClCompile Include="2353.FoodRatings.cpp" />
     <ClCompile Include="2359.closestMeetingNode.cpp" />
     <ClCompile Include="2364.countBadPairs.cpp" />
