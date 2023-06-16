@@ -13,7 +13,7 @@
     <ClCompile Include="support.cpp">
       <Filter>Leetcode</Filter>
     </ClCompile>
-    <ClCompile Include="2699.modifiedGraphEdges.cpp" />
+    <ClCompile Include="1494.minNumberOfSemesters.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Leetcode">

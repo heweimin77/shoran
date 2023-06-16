@@ -179,6 +179,7 @@
     <ClCompile Include="1377.frogPosition.cpp" />
     <ClCompile Include="13romanToInt.cpp" />
     <ClCompile Include="1439.kthSmallest.cpp" />
+    <ClCompile Include="1483.TreeAncestor.cpp" />
     <ClCompile Include="1590.minSubarray.cpp" />
     <ClCompile Include="15threeSum.cpp" />
     <ClCompile Include="1601.smallestEquivalentString.cpp" />
@@ -261,8 +262,11 @@
     <ClCompile Include="2681.sumOfPower.cpp" />
     <ClCompile Include="2684.maxMoves.cpp" />
     <ClCompile Include="2685.countCompleteComponents.cpp" />
+    <ClCompile Include="2699.modifiedGraphEdges.cpp" />
     <ClCompile Include="2709.canTraverseAllPairs.cpp" />
     <ClCompile Include="2719.count.cpp" />
+    <ClCompile Include="2732.goodSubsetofBinaryMatrix.cpp" />
+    <ClCompile Include="2736.maximumSumQueries.cpp" />
     <ClCompile Include="6404.countOperationsToEmptyArray.cpp" />
     <ClCompile Include="8myAtoi.cpp" />
     <ClCompile Include="9isPalindrome.cpp" />

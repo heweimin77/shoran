@@ -403,9 +403,6 @@
     <ClCompile Include="2684.maxMoves.cpp">
       <Filter>done</Filter>
     </ClCompile>
-    <ClCompile Include="2685.countCompleteComponents.cpp">
-      <Filter>todo</Filter>
-    </ClCompile>
     <ClCompile Include="1072.maxEqualRowsAfterFlips.cpp">
       <Filter>done</Filter>
     </ClCompile>
@@ -455,6 +452,21 @@
       <Filter>done</Filter>
     </ClCompile>
     <ClCompile Include="2352.equalPairs.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2699.modifiedGraphEdges.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="1483.TreeAncestor.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2685.countCompleteComponents.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2736.maximumSumQueries.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2732.goodSubsetofBinaryMatrix.cpp">
       <Filter>done</Filter>
     </ClCompile>
   </ItemGroup>
