@@ -180,7 +180,9 @@
     <ClCompile Include="13romanToInt.cpp" />
     <ClCompile Include="1439.kthSmallest.cpp" />
     <ClCompile Include="1483.TreeAncestor.cpp" />
+    <ClCompile Include="1494.minNumberOfSemesters.cpp" />
     <ClCompile Include="1590.minSubarray.cpp" />
+    <ClCompile Include="1595.connectTwoGroups.cpp" />
     <ClCompile Include="15threeSum.cpp" />
     <ClCompile Include="1601.smallestEquivalentString.cpp" />
     <ClCompile Include="1605.restoreMatrix.cpp" />
@@ -267,6 +269,7 @@
     <ClCompile Include="2719.count.cpp" />
     <ClCompile Include="2732.goodSubsetofBinaryMatrix.cpp" />
     <ClCompile Include="2736.maximumSumQueries.cpp" />
+    <ClCompile Include="2741.specialPerm.cpp" />
     <ClCompile Include="6404.countOperationsToEmptyArray.cpp" />
     <ClCompile Include="8myAtoi.cpp" />
     <ClCompile Include="9isPalindrome.cpp" />
@@ -278,6 +281,7 @@
     <ClCompile Include="lcp.14.splitArray.cpp" />
     <ClCompile Include="lcp.15.visitOrder.cpp" />
     <ClCompile Include="lcp.20.busRapidTransit.cpp" />
+    <ClCompile Include="lcp.41.flipChess.cpp" />
     <ClCompile Include="lcp.42.circleGame.cpp" />
     <ClCompile Include="lcp.49.ringGame.cpp" />
     <ClCompile Include="lcp.53.defendSpaceCity.cpp" />

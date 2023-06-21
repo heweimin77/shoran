@@ -469,6 +469,18 @@
     <ClCompile Include="2732.goodSubsetofBinaryMatrix.cpp">
       <Filter>done</Filter>
     </ClCompile>
+    <ClCompile Include="1494.minNumberOfSemesters.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="1595.connectTwoGroups.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="lcp.41.flipChess.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2741.specialPerm.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="todo">
