@@ -189,6 +189,7 @@
     <ClCompile Include="1626.bestTeamScore.cpp" />
     <ClCompile Include="1630.checkArithmeticSubarrays.cpp" />
     <ClCompile Include="1638.countSubstrings.cpp" />
+    <ClCompile Include="1659.getMaxGridHappiness.cpp" />
     <ClCompile Include="16threeSumClosest.cpp" />
     <ClCompile Include="2106.maxTotalFruits.cpp" />
     <ClCompile Include="2342.maximumSum.cpp" />
@@ -270,6 +271,7 @@
     <ClCompile Include="2732.goodSubsetofBinaryMatrix.cpp" />
     <ClCompile Include="2736.maximumSumQueries.cpp" />
     <ClCompile Include="2741.specialPerm.cpp" />
+    <ClCompile Include="2742.paintWalls.cpp" />
     <ClCompile Include="6404.countOperationsToEmptyArray.cpp" />
     <ClCompile Include="8myAtoi.cpp" />
     <ClCompile Include="9isPalindrome.cpp" />

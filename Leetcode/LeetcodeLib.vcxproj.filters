@@ -481,6 +481,12 @@
     <ClCompile Include="2741.specialPerm.cpp">
       <Filter>done</Filter>
     </ClCompile>
+    <ClCompile Include="2742.paintWalls.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="1659.getMaxGridHappiness.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="todo">
