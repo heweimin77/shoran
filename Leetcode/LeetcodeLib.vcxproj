@@ -167,6 +167,7 @@
     <ClCompile Include="1147.longestDecomposition.cpp" />
     <ClCompile Include="1156.maxRepOpt1.cpp" />
     <ClCompile Include="1163.lastSubstring.cpp" />
+    <ClCompile Include="1186.maximumSum.cpp" />
     <ClCompile Include="1187.makeArrayIncreasing.cpp" />
     <ClCompile Include="1192.criticalConnections.cpp" />
     <ClCompile Include="11maxArea.cpp" />
@@ -178,6 +179,7 @@
     <ClCompile Include="1376.numOfMinutes.cpp" />
     <ClCompile Include="1377.frogPosition.cpp" />
     <ClCompile Include="13romanToInt.cpp" />
+    <ClCompile Include="1401.checkOverlap.cpp" />
     <ClCompile Include="1439.kthSmallest.cpp" />
     <ClCompile Include="1483.TreeAncestor.cpp" />
     <ClCompile Include="1494.minNumberOfSemesters.cpp" />
@@ -190,6 +192,7 @@
     <ClCompile Include="1630.checkArithmeticSubarrays.cpp" />
     <ClCompile Include="1638.countSubstrings.cpp" />
     <ClCompile Include="1659.getMaxGridHappiness.cpp" />
+    <ClCompile Include="1681.minimumIncompatibility.cpp" />
     <ClCompile Include="16threeSumClosest.cpp" />
     <ClCompile Include="2106.maxTotalFruits.cpp" />
     <ClCompile Include="2342.maximumSum.cpp" />
@@ -272,6 +275,9 @@
     <ClCompile Include="2736.maximumSumQueries.cpp" />
     <ClCompile Include="2741.specialPerm.cpp" />
     <ClCompile Include="2742.paintWalls.cpp" />
+    <ClCompile Include="2745.longestString.cpp" />
+    <ClCompile Include="2746.minimizeConcatenatedLength.cpp" />
+    <ClCompile Include="2751.survivedRobotsHealths.cpp" />
     <ClCompile Include="6404.countOperationsToEmptyArray.cpp" />
     <ClCompile Include="8myAtoi.cpp" />
     <ClCompile Include="9isPalindrome.cpp" />
@@ -283,6 +289,10 @@
     <ClCompile Include="lcp.14.splitArray.cpp" />
     <ClCompile Include="lcp.15.visitOrder.cpp" />
     <ClCompile Include="lcp.20.busRapidTransit.cpp" />
+    <ClCompile Include="lcp.21.chaseGame.cpp" />
+    <ClCompile Include="lcp.27.BlackBox.cpp" />
+    <ClCompile Include="lcp.36.maxGroupNumber.cpp" />
+    <ClCompile Include="lcp.37.minRecSize.cpp" />
     <ClCompile Include="lcp.41.flipChess.cpp" />
     <ClCompile Include="lcp.42.circleGame.cpp" />
     <ClCompile Include="lcp.49.ringGame.cpp" />

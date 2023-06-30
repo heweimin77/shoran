@@ -487,6 +487,36 @@
     <ClCompile Include="1659.getMaxGridHappiness.cpp">
       <Filter>done</Filter>
     </ClCompile>
+    <ClCompile Include="lcp.37.minRecSize.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="1401.checkOverlap.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="1186.maximumSum.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="lcp.36.maxGroupNumber.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="1681.minimumIncompatibility.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2745.longestString.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2746.minimizeConcatenatedLength.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2751.survivedRobotsHealths.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="lcp.21.chaseGame.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="lcp.27.BlackBox.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="todo">
