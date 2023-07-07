@@ -517,6 +517,15 @@
     <ClCompile Include="lcp.27.BlackBox.cpp">
       <Filter>done</Filter>
     </ClCompile>
+    <ClCompile Include="2763.sumImbalanceNumbers.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="lcp.31.escapeMaze.cpp">
+      <Filter>todo</Filter>
+    </ClCompile>
+    <ClCompile Include="2532.findCrossingTime.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="todo">

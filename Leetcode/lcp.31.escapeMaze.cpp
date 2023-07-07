@@ -19,42 +19,41 @@ namespace {
 class Solution {
 public:
     bool escapeMaze(vector<vector<string>>& maze) {
-        union X{
-            char index[4];
+        union Pos{
+            struct { char x; char y; char used; };
             int  value;
         };
         int k = maze.size(), m = maze[0].size(), n = maze[0][0].size();
         unordered_map<int, int> lastindex;
-        X x;
-        x.value = 0;
-        x.index[0] = m - 1, x.index[1] = n - 1;
-        lastindex[x.value] = k - 1;
-        
+        Pos p;
+        p.value = 0;
+        p.x = m - 1, p.y = n - 1;
+        lastindex[p.value] = k - 1;
         
         int delta2[][2] = { {-1, 0}, {1, 0}, {0, -1}, {0, 1} };
         queue<int> q;
-        q.push(x.value);
+        q.push(p.value);
         while (!q.empty()) {
-            X now;
+            Pos now;
             now.value = q.front();
-            if (now.index[0] == 0 && now.index[1] == 0) return true;
+            if (now.x == 0 && now.y == 0) return true;
             q.pop();
             int ni = lastindex[now.value] - 1;
             if (ni < 0) continue;
             for (auto& d : delta2) {
-                X next = now;
-                next.index[0] += d[0];
-                next.index[1] += d[1];
-                if (next.index[0] < 0 || next.index[0] >= m) continue;
-                if (next.index[1] < 0 || next.index[1] >= n) continue;
+                Pos next = now;
+                next.x += d[0];
+                next.y += d[1];
+                if (next.x < 0 || next.x >= m) continue;
+                if (next.y < 0 || next.y >= n) continue;
                 if (lastindex.count(next.value) > 0) continue;
                 auto& mz = maze[ni];
-                if (mz[next.index[0]][next.index[1]] == '.') {
+                if (mz[next.x][next.y] == '.') {
                     lastindex[next.value] = ni;
                     q.push(next.value);
                 } else {
-                    if (next.index[2] == 0) {
-                        next.index[2] = 1;
+                    if (next.used == 0) {
+                        next.used = 1;
                         lastindex[next.value] = ni;
                         q.push(next.value);
                     }
@@ -64,44 +63,44 @@ public:
 
         int limit = m + n - k;
         unordered_set<long long> nows;
-        x.value = 0;
-        nows.insert(x.value);
+        p.value = 0;
+        nows.insert(p.value);
         int delta[][2] = { {0, 0},  {-1, 0}, {1, 0}, {0, -1}, {0, 1} };
         for (int i = 1; i < k; ++i, ++limit) {
             unordered_set<long long> nexts;
             auto& mz = maze[i];
             for (auto now : nows) {
-                union X x, xn;
-                x.value = now;
+                Pos p, next;
+                p.value = now;
                 for (auto& d : delta) {
-                    xn = x;
-                    xn.index[0] += d[0];
-                    xn.index[1] += d[1];
-                    if (xn.index[0] < 0 || xn.index[0] >= m) continue;
-                    if (xn.index[1] < 0 || xn.index[1] >= n) continue;
-                    if (xn.index[0] + xn.index[1] < limit) continue;
+                    next = p;
+                    next.x += d[0];
+                    next.y += d[1];
+                    if (next.x < 0 || next.x >= m) continue;
+                    if (next.y < 0 || next.y >= n) continue;
+                    if (next.x + next.y < limit) continue;
 
-                    X xxx = xn;
-                    xxx.index[2] = 0;
-                    auto it = lastindex.find(xxx.value);
+                    Pos check = next;
+                    check.used = 0;
+                    auto it = lastindex.find(check.value);
                     if (it != lastindex.end() && i <= it->second) {
                         return true;
                     }
-                    if (xn.index[2] == 0) {
-                        xxx.index[2] = 1;
-                        it = lastindex.find(xxx.value);
+                    if (next.used== 0) {
+                        check.used = 1;
+                        it = lastindex.find(check.value);
                         if (it != lastindex.end() && i <= it->second) {
                             return true;
                         }
                     }
 
-                    if (mz[xn.index[0]][xn.index[1]] == '.') {
-                        nexts.insert(xn.value);
+                    if (mz[next.x][next.y] == '.') {
+                        nexts.insert(next.value);
                         continue;
                     }
-                    if (xn.index[2] == 0) {
-                        xn.index[2] = 1;
-                        nexts.insert(xn.value);
+                    if (next.used == 0) {
+                        next.used = 1;
+                        nexts.insert(next.value);
                     }
                 }
             }
@@ -131,12 +130,20 @@ TEST_F(TestSolution, Test1)
     decltype(actual) expect = true;
     EXPECT_EQ(expect, actual);
 }
-TEST_F(TestSolution, TestMain)
+TEST_F(TestSolution, Test2)
 {
     vector<vector<string>> maze = { {"...", "...", "..."}, {".##", "###", "##."}, {".##", "###", "##."}, {".##", "###", "##."}, {".##", "###", "##."}, {".##", "###", "##."}, {".##", "###", "##."} };
     Solution s;
     auto actual = s.escapeMaze(maze);
     decltype(actual) expect = false;
+    EXPECT_EQ(expect, actual);
+}
+TEST_F(TestSolution, TestMain)
+{
+    vector<vector<string>> maze = { {"....###.", "###.#.##", ".##..##."}, {".#####..", "##.####.", "##.####."}, {"....####", "###..###", "##..##.."}, {".####...", "######.#", "###.##.."}, {"..###.##", "########", "#######."}, {"...##.##", "###.####", ".#.#.#.."}, {".######.", "#.#.....", "#.#.#.#."}, {".###.##.", "##.#####", "###.##.."}, {"..#.####", "#####.##", "##.###.."}, {".#.###.#", ".#######", "#####.#."}, {".######.", "####....", ".##..##."}, {".###.#..", "###.#.#.", "#####.#."}, {".###.###", "###.####", "....###."}, {".###.##.", "########", "#####.#."}, {".###.###", "##.####.", ".###...."}, {".#.#.##.", ".##.####", "#####.#."}, {"..#.####", "#.##....", "####...."}, {"..#.##.#", "#.##..#.", "###.###."}, {"..##.#.#", ".##.#..#", ".####..."}, {".##..##.", "########", "#####.#."}, {".####.##", "#.#...##", "#.##..#."}, {"..#.####", "######.#", "###.###."}, {".#..#..#", "###..##.", "#..#...."} };
+    Solution s;
+    auto actual = s.escapeMaze(maze);
+    decltype(actual) expect = true;
     EXPECT_EQ(expect, actual);
 }
 }

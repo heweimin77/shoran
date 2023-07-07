@@ -245,6 +245,7 @@
     <ClCompile Include="2522.minimumPartition.cpp" />
     <ClCompile Include="2523.closestPrimes.cpp" />
     <ClCompile Include="2527.xorBeauty.cpp" />
+    <ClCompile Include="2532.findCrossingTime.cpp" />
     <ClCompile Include="2536.rangeAddQueries.cpp" />
     <ClCompile Include="2537.countGood.cpp" />
     <ClCompile Include="2563.countFairPairs.cpp" />
@@ -278,6 +279,7 @@
     <ClCompile Include="2745.longestString.cpp" />
     <ClCompile Include="2746.minimizeConcatenatedLength.cpp" />
     <ClCompile Include="2751.survivedRobotsHealths.cpp" />
+    <ClCompile Include="2763.sumImbalanceNumbers.cpp" />
     <ClCompile Include="6404.countOperationsToEmptyArray.cpp" />
     <ClCompile Include="8myAtoi.cpp" />
     <ClCompile Include="9isPalindrome.cpp" />
@@ -291,6 +293,7 @@
     <ClCompile Include="lcp.20.busRapidTransit.cpp" />
     <ClCompile Include="lcp.21.chaseGame.cpp" />
     <ClCompile Include="lcp.27.BlackBox.cpp" />
+    <ClCompile Include="lcp.31.escapeMaze.cpp" />
     <ClCompile Include="lcp.36.maxGroupNumber.cpp" />
     <ClCompile Include="lcp.37.minRecSize.cpp" />
     <ClCompile Include="lcp.41.flipChess.cpp" />

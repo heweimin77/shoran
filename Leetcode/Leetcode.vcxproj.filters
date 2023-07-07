@@ -13,7 +13,7 @@
     <ClCompile Include="support.cpp">
       <Filter>Leetcode</Filter>
     </ClCompile>
-    <ClCompile Include="lcp.31.escapeMaze.cpp" />
+    <ClCompile Include="lcp.35.electricCarPlan.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Leetcode">
