@@ -526,6 +526,12 @@
     <ClCompile Include="2532.findCrossingTime.cpp">
       <Filter>done</Filter>
     </ClCompile>
+    <ClCompile Include="lcp.35.electricCarPlan.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="lcp.43.trafficCommand.cpp">
+      <Filter>todo</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="todo">

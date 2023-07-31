@@ -294,10 +294,12 @@
     <ClCompile Include="lcp.21.chaseGame.cpp" />
     <ClCompile Include="lcp.27.BlackBox.cpp" />
     <ClCompile Include="lcp.31.escapeMaze.cpp" />
+    <ClCompile Include="lcp.35.electricCarPlan.cpp" />
     <ClCompile Include="lcp.36.maxGroupNumber.cpp" />
     <ClCompile Include="lcp.37.minRecSize.cpp" />
     <ClCompile Include="lcp.41.flipChess.cpp" />
     <ClCompile Include="lcp.42.circleGame.cpp" />
+    <ClCompile Include="lcp.43.trafficCommand.cpp" />
     <ClCompile Include="lcp.49.ringGame.cpp" />
     <ClCompile Include="lcp.53.defendSpaceCity.cpp" />
     <ClCompile Include="lcp.71.reservoir.cpp" />
