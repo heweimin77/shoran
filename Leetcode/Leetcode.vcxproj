@@ -144,7 +144,7 @@
   <ItemGroup>
     <ClCompile Include="..\gtest\gtest.cpp" />
     <ClCompile Include="cb.cpp" />
-    <ClCompile Include="lcp.35.electricCarPlan.cpp" />
+    <ClCompile Include="lcp.43.trafficCommand.cpp" />
     <ClCompile Include="Leetcode.cpp" />
     <ClCompile Include="support.cpp" />
   </ItemGroup>

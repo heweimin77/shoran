@@ -36,10 +36,7 @@ public:
             auto now = q.top();
             q.pop();
             if (now[0] > results[now[1]][now[2]]) continue;
-            //cout << now[0] << ": " << now[1] << ", " << now[2] << endl;
-
             if (now[1] == end) return now[0];
-            
 
             // charge
             for (int i = 1; i <= cnt - now[2]; ++i) {
