@@ -538,6 +538,12 @@
     <ClCompile Include="2781.longestValidSubstring.cpp">
       <Filter>done</Filter>
     </ClCompile>
+    <ClCompile Include="lcp.35.electricCarPlan.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="lcp.43.trafficCommand.cpp">
+      <Filter>todo</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="todo">

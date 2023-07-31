@@ -302,6 +302,7 @@
     <ClCompile Include="lcp.38.guardCastle.cpp" />
     <ClCompile Include="lcp.41.flipChess.cpp" />
     <ClCompile Include="lcp.42.circleGame.cpp" />
+    <ClCompile Include="lcp.43.trafficCommand.cpp" />
     <ClCompile Include="lcp.49.ringGame.cpp" />
     <ClCompile Include="lcp.53.defendSpaceCity.cpp" />
     <ClCompile Include="lcp.71.reservoir.cpp" />

@@ -17,8 +17,16 @@ using namespace std;
 namespace {
 
 class Solution {
+#define MAKE_STATE(e, s, w, n)  ((e) | ((s) << 8) | ((w) << 16) | ((n) << 24))
+#define GET_EAST(state)  ((state) & 0xFF)
+#define GET_SOUTH(state) (((state) >> 8) & 0xFF)
+#define GET_WEST(state) (((state) >> 8) & 0xFF)
+#define GET_NORTH(state) (((state) >> 8) & 0xFF)
+
 public:
-    int trafficCommand(vector<string>& directions) {
+    int trafficCommand(vector<string> &directions)
+    {
+        
         return 0;
     }
 };
