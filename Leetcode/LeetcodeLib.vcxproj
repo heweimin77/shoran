@@ -149,6 +149,7 @@
     <ClCompile Include="1003.isValid.cpp" />
     <ClCompile Include="1012.numDupDigitsAtMostN.cpp" />
     <ClCompile Include="1031.maxSumTwoNoOverlap.cpp" />
+    <ClCompile Include="1036.isEscapePossible.cpp" />
     <ClCompile Include="1039.minScoreTriangulation.cpp" />
     <ClCompile Include="1040.numMovesStonesII.cpp" />
     <ClCompile Include="1043.maxSumAfterPartitioning.cpp" />
@@ -253,6 +254,7 @@
     <ClCompile Include="2564.countFairPairs.cpp" />
     <ClCompile Include="2566.minMaxDifference.cpp" />
     <ClCompile Include="2567.minimizeSum.cpp" />
+    <ClCompile Include="2569.handleQuery.cpp" />
     <ClCompile Include="2571.minOperations.cpp" />
     <ClCompile Include="2572.squareFreeSubsets.cpp" />
     <ClCompile Include="2580.countWays.cpp" />
@@ -265,8 +267,11 @@
     <ClCompile Include="2611.miceAndCheese.cpp" />
     <ClCompile Include="2615.distance.cpp" />
     <ClCompile Include="2616.minimizeMax.cpp" />
+    <ClCompile Include="2617.minimumVisitedCells.cpp" />
+    <ClCompile Include="2646.minimumTotalPrice.cpp" />
     <ClCompile Include="2661.firstCompleteIndex.cpp" />
     <ClCompile Include="2662.minimumCost.cpp" />
+    <ClCompile Include="2663.smallestBeautifulString.cpp" />
     <ClCompile Include="2681.sumOfPower.cpp" />
     <ClCompile Include="2684.maxMoves.cpp" />
     <ClCompile Include="2685.countCompleteComponents.cpp" />
@@ -282,8 +287,11 @@
     <ClCompile Include="2751.survivedRobotsHealths.cpp" />
     <ClCompile Include="2763.sumImbalanceNumbers.cpp" />
     <ClCompile Include="2781.longestValidSubstring.cpp" />
+    <ClCompile Include="2800.minimumString.cpp" />
+    <ClCompile Include="2801.countSteppingNumbers.cpp" />
     <ClCompile Include="6404.countOperationsToEmptyArray.cpp" />
     <ClCompile Include="8myAtoi.cpp" />
+    <ClCompile Include="980.uniquePathsIII.cpp" />
     <ClCompile Include="9isPalindrome.cpp" />
     <ClCompile Include="interview.16.13.cutSquares.cpp" />
     <ClCompile Include="interview.17.25.maxRectangle.cpp" />

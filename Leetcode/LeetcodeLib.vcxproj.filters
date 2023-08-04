@@ -541,8 +541,32 @@
     <ClCompile Include="lcp.35.electricCarPlan.cpp">
       <Filter>done</Filter>
     </ClCompile>
-    <ClCompile Include="lcp.43.trafficCommand.cpp">
+    <ClCompile Include="2569.handleQuery.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2800.minimumString.cpp">
       <Filter>todo</Filter>
+    </ClCompile>
+    <ClCompile Include="2801.countSteppingNumbers.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="lcp.43.trafficCommand.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="1036.isEscapePossible.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2663.smallestBeautifulString.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2646.minimumTotalPrice.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2617.minimumVisitedCells.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="980.uniquePathsIII.cpp">
+      <Filter>done</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

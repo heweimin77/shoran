@@ -143,9 +143,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\gtest\gtest.cpp" />
-    <ClCompile Include="2569.handleQuery.cpp" />
+    <ClCompile Include="2612.minReverseOperations.cpp" />
     <ClCompile Include="cb.cpp" />
-    <ClCompile Include="lcp.43.trafficCommand.cpp" />
     <ClCompile Include="Leetcode.cpp" />
     <ClCompile Include="support.cpp" />
   </ItemGroup>
