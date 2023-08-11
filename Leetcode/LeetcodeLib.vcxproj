@@ -118,6 +118,7 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>..\gtest</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -173,6 +174,7 @@
     <ClCompile Include="1192.criticalConnections.cpp" />
     <ClCompile Include="11maxArea.cpp" />
     <ClCompile Include="1263.minPushBox.cpp" />
+    <ClCompile Include="1287.minFallingPathSum.cpp" />
     <ClCompile Include="12intToRoman.cpp" />
     <ClCompile Include="1330.maxValueAfterReverse.cpp" />
     <ClCompile Include="1335.minDifficulty.cpp" />
@@ -250,21 +252,34 @@
     <ClCompile Include="2532.findCrossingTime.cpp" />
     <ClCompile Include="2536.rangeAddQueries.cpp" />
     <ClCompile Include="2537.countGood.cpp" />
+    <ClCompile Include="2547.minCost.cpp" />
+    <ClCompile Include="2552.countQuadruplets.cpp" />
+    <ClCompile Include="2561.minCost.cpp" />
     <ClCompile Include="2563.countFairPairs.cpp" />
     <ClCompile Include="2564.countFairPairs.cpp" />
+    <ClCompile Include="2565.minimumScore.cpp" />
     <ClCompile Include="2566.minMaxDifference.cpp" />
     <ClCompile Include="2567.minimizeSum.cpp" />
     <ClCompile Include="2569.handleQuery.cpp" />
     <ClCompile Include="2571.minOperations.cpp" />
     <ClCompile Include="2572.squareFreeSubsets.cpp" />
+    <ClCompile Include="2573.findTheString.cpp" />
+    <ClCompile Include="2577.minimumTime.cpp" />
     <ClCompile Include="2580.countWays.cpp" />
+    <ClCompile Include="2581.rootCount.cpp" />
+    <ClCompile Include="2584.findValidSplit.cpp" />
+    <ClCompile Include="2585.waysToReachTarget.cpp" />
+    <ClCompile Include="2589.findMinimumTime.cpp" />
     <ClCompile Include="2593.findScore.cpp" />
     <ClCompile Include="2594.repairCars.cpp" />
     <ClCompile Include="2597.beautifulSubsets.cpp" />
     <ClCompile Include="2601.primeSubOperation.cpp" />
     <ClCompile Include="2602.minOperations.cpp" />
+    <ClCompile Include="2603.collectTheCoins.cpp" />
     <ClCompile Include="2607.makeSubKSumEqual.cpp" />
+    <ClCompile Include="2608.findShortestCycle.cpp" />
     <ClCompile Include="2611.miceAndCheese.cpp" />
+    <ClCompile Include="2612.minReverseOperations.cpp" />
     <ClCompile Include="2615.distance.cpp" />
     <ClCompile Include="2616.minimizeMax.cpp" />
     <ClCompile Include="2617.minimumVisitedCells.cpp" />
@@ -289,6 +304,8 @@
     <ClCompile Include="2781.longestValidSubstring.cpp" />
     <ClCompile Include="2800.minimumString.cpp" />
     <ClCompile Include="2801.countSteppingNumbers.cpp" />
+    <ClCompile Include="2809.minimumTime.cpp" />
+    <ClCompile Include="2813.findMaximumElegance.cpp" />
     <ClCompile Include="6404.countOperationsToEmptyArray.cpp" />
     <ClCompile Include="8myAtoi.cpp" />
     <ClCompile Include="980.uniquePathsIII.cpp" />

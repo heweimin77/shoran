@@ -118,6 +118,7 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>..\gtest</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -143,7 +144,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\gtest\gtest.cpp" />
-    <ClCompile Include="2612.minReverseOperations.cpp" />
+    <ClCompile Include="2538.maxOutput.cpp" />
     <ClCompile Include="cb.cpp" />
     <ClCompile Include="Leetcode.cpp" />
     <ClCompile Include="support.cpp" />

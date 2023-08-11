@@ -66,6 +66,23 @@ void get_primes(vector<int> &min_factor, vector<int> &primes)
     }
 }
 
+vector<int> getPrimes(int maxnum)
+{
+    vector<int> primes;
+    vector<int> min_factor(maxnum + 1);
+    for (int i = 2; i <= maxnum; ++i) {
+        if (min_factor[i] == 0) {
+            min_factor[i] = i;
+            primes.push_back(i);
+        }
+        for (auto p : primes) {
+            if (i * p > maxnum) break;
+            min_factor[i * p] = p;
+            if (p == min_factor[i]) break;
+        }
+    }
+    return primes;
+}
 
 // Ïß¶ÎÊ÷
 class SegmentTree {

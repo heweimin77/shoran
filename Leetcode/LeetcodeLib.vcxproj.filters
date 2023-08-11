@@ -568,6 +568,54 @@
     <ClCompile Include="980.uniquePathsIII.cpp">
       <Filter>done</Filter>
     </ClCompile>
+    <ClCompile Include="2612.minReverseOperations.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2809.minimumTime.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2813.findMaximumElegance.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2608.findShortestCycle.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2603.collectTheCoins.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2589.findMinimumTime.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2585.waysToReachTarget.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2584.findValidSplit.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2581.rootCount.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="1287.minFallingPathSum.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2577.minimumTime.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2573.findTheString.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2561.minCost.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2565.minimumScore.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2552.countQuadruplets.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2547.minCost.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="todo">
