@@ -616,6 +616,21 @@
     <ClCompile Include="2547.minCost.cpp">
       <Filter>done</Filter>
     </ClCompile>
+    <ClCompile Include="2538.maxOutput.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2528.maxPower.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2518.countPartitions.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2514.countAnagrams.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2509.cycleLengthQueries.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="todo">
