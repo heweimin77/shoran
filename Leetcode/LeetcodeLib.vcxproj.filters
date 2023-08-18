@@ -631,6 +631,51 @@
     <ClCompile Include="2509.cycleLengthQueries.cpp">
       <Filter>done</Filter>
     </ClCompile>
+    <ClCompile Include="2508.isPossible.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2503.maxPoints.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2499.minimumTotalCost.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="833.findReplaceString.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2493.magnificentSets.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2818.maximumScore.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2484.countPalindromes.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2478.beautifulPartitions.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2472.maxPalindromes.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2468.splitMessage.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2463.minimumTotalDistance.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2454.secondGreaterElement.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2444.countSubarrays.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2440.componentValue.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2435.numberOfPaths.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="todo">

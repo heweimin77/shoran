@@ -13,7 +13,7 @@
     <ClCompile Include="support.cpp">
       <Filter>Leetcode</Filter>
     </ClCompile>
-    <ClCompile Include="2508.isPossible.cpp" />
+    <ClCompile Include="2421.numberOfGoodPaths.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Leetcode">

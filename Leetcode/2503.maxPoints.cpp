@@ -21,48 +21,40 @@ namespace {
 
 class Solution {
 public:
-    bool isPossible(int n, vector<vector<int>> &edges)
-    {
-        adjs.resize(n);
-        for (auto &e : edges) {
-            --e[0], --e[1];
-            adjs[e[0]].insert(e[1]);
-            adjs[e[1]].insert(e[0]);
-        }
-        vector<int> points;
+    vector<int> maxPoints(vector<vector<int>>& grid, vector<int>& queries) {
+        int n = queries.size();
+        vector<int> indexes(n);
+        iota(indexes.begin(), indexes.end(), 0);
+        sort(indexes.begin(), indexes.end(), [&](int lhs, int rhs) {
+            return queries[lhs] < queries[rhs];
+            });
+        int result = 0;
+        priority_queue<vector<int>, vector<vector<int>>, greater<vector<int>>> q;
+        q.push({ grid[0][0], 0, 0 });
+        grid[0][0] = INT_MAX;
+
+        int deltas[4][2] = { {0, 1}, {0, -1}, {1, 0}, {-1, 0} };
+        vector<int> results(n);
         for (int i = 0; i < n; ++i) {
-            if (adjs[i].size() & 1) points.push_back(i);
+            int limit = queries[indexes[i]];
+            while (!q.empty() && q.top()[0] < limit) {
+                auto now = q.top();
+                q.pop();
+                ++result;
+                for (auto& d : deltas) {
+                    int nx = now[1] + d[0];
+                    int ny = now[2] + d[1];
+                    if (nx < 0 || nx >= grid.size()) continue;
+                    if (ny < 0 || ny >= grid[0].size()) continue;
+                    if (grid[nx][ny] == INT_MAX) continue;
+                    q.push({ grid[nx][ny], nx, ny });
+                    grid[nx][ny] = INT_MAX;
+                }
+            }
+            results[indexes[i]] = result;
         }
-        if (points.empty()) return true;
-        if (points.size() > 4) return false;
-        if (points.size() == 2) return check2(points);
-        else return check4(points);
+        return results;
     }
-    bool check2(vector<int> &points) {
-        int p0 = points[0], p1 = points[1];
-        if (check(p0, p1)) return true;
-        for (int i = 0; i < adjs.size(); ++i) {
-            if (i != p0 && i != p1 && check(i, p0) && check(i, p1)) return true;
-        }
-
-        return false;
-    }
-
-    bool check4(vector<int> &points) {
-        if (check(points[0], points[1]) && check(points[2], points[3])) return true;
-        if (check(points[0], points[2]) && check(points[1], points[3])) return true;
-        if (check(points[0], points[3]) && check(points[1], points[2])) return true;
-        return false;
-    }
-
-    bool check(int a, int b)
-    {
-        if (a == b) return false;
-        return adjs[a].count(b) == 0;
-    }
-
-private:
-    vector<unordered_set<int>> adjs;
 };
 
 class TestSolution :public testing::Test
@@ -78,11 +70,12 @@ public:
 
 TEST_F(TestSolution, TestMain)
 {
-    vector<vector<int>> edges = { {1,2}, {2,3}, {3,4}, {4,2}, {1,4}, {2,5} };
+    vector<vector<int>> grid = { {1,2,3}, {2,5,7}, {3,5,1} };
+    vector<int> queries = { 5,6,2 };
     Solution s;
-    auto actual = s.isPossible(5, edges);
-    decltype(actual) expect = true;
-    EXPECT_EQ(expect, actual);
+    auto actual = s.maxPoints(grid, queries);
+    decltype(actual) expect = {5, 8, 1};
+    EXPECT_EQ_CONTAINER(expect, actual);
 }
 }
 
