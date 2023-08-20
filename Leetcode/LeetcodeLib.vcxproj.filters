@@ -676,6 +676,36 @@
     <ClCompile Include="2435.numberOfPaths.cpp">
       <Filter>done</Filter>
     </ClCompile>
+    <ClCompile Include="2421.numberOfGoodPaths.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2416.sumPrefixScores.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2407.lengthOfLIS.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2402.mostBooked.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2398.maximumRobots.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2392.buildMatrix.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2386.kSum.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2382.maximumSegmentSum.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2376.countSpecialNumbers.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2338.idealArrays.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="todo">

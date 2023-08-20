@@ -20,6 +20,47 @@ using namespace std;
 namespace {
 
 class Solution {
+    class Uniset {
+    public:
+        Uniset(int n) : indexes(n, -1)
+        {
+        }
+
+        int getIndex(int i) const { return indexes[i]; }
+        void merge(int i, int j)
+        {
+            if (isSameGroup(i, j)) return;
+            int ii = getIndex(i), ji = getIndex(j);
+            if (ii < 0 && ji < 0) {
+                indexes[i] = indexes[j] = groups.size();
+                groups.push_back(unordered_set<int>{i, j});
+            } else if (ii < 0) {
+                indexes[i] = ji;
+                groups[ji].insert(i);
+            } else if (ji < 0) {
+                indexes[j] = ii;
+                groups[ii].insert(j);
+            } else {
+                if (groups[ii].size() < groups[ji].size()) swap(ii, ji);
+                auto &t = groups[ii];
+                for (auto x : groups[ji]) {
+                    indexes[x] = ii;
+                    t.insert(x);
+                }
+                groups[ji].clear();
+            }
+        }
+        bool isSameGroup(int i, int j)
+        {
+            int ii = getIndex(i), ji = getIndex(j);
+            return ii >= 0 && ii == ji;
+        }
+
+    private:
+        vector<int> indexes;
+        vector<unordered_set<int>> groups;
+    };
+
 public:
     int numberOfGoodPaths(vector<int>& vals, vector<vector<int>>& edges) {
         int n = vals.size();

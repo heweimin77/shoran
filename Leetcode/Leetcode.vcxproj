@@ -144,7 +144,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\gtest\gtest.cpp" />
-    <ClCompile Include="2421.numberOfGoodPaths.cpp" />
+    <ClCompile Include="2322.minimumScore.cpp" />
     <ClCompile Include="cb.cpp" />
     <ClCompile Include="Leetcode.cpp" />
     <ClCompile Include="support.cpp" />
