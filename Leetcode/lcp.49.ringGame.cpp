@@ -9,7 +9,8 @@
 #include <algorithm>
 #include <queue>
 #include <numeric>
-
+#include <functional>
+#include <stack>
 #include "support.h"
 
 using namespace std;
@@ -17,94 +18,133 @@ using namespace std;
 namespace {
 
 class Solution {
-    using Index = pair<long long, int>;
-    struct Item {
-        int i;
-        int left;
-        int right;
-        long long value;
+    using ll = long long;
+
+    struct Info {
+        Info(ll d) {
+            left = right = d;
+            v = 0;
+            select = true;
+        }
+        ll left;
+        ll right;
+        ll v;
+        bool select;
     };
 public:
     long long ringGame(vector<long long> &challenge)
     {
-        long long mbase = *max_element(challenge.begin(), challenge.end());
-        long long mmask = 1LL << 60;
-        while (mmask > mbase) mmask >>= 1;
-        int n = challenge.size();
-        vector<Item> items(n);
-        priority_queue<Index, vector<Index>, greater<Index>> q;
-        for (int i = 0; i < n; ++i) {
-            items[i] = { i, i, i, 0};
-            q.push({ challenge[i], i});
+        long long mask = 0;
+        for (auto c : challenge) mask |= c;
+        long long highbit = (1LL << 62);
+        while ((highbit & mask) == 0) highbit >>= 1;
+        list<Info> data;
+        for (auto c : challenge) data.emplace_back(c);
+        ll result = highbit;
+        ll bit = highbit;
+        while (data.size() > 1) {
+            ll totalr = 0;
+            for (auto it = data.begin(); it != data.end(); ++it) {
+                if (!it->select) continue;
+                it->v |= result;
+                while (data.size() > 1) {
+                    if (it->v >= it->right) {
+                        it->v |= it->right;
+                        auto jt = it;
+                        if (++jt == data.end()) {
+                            jt = data.begin();
+                        }
+                        if (it->v >= jt->left) {
+                            it->v |= jt->left;
+                            it->v |= jt->v;
+                            it->right = jt->right;
+                            data.erase(jt);
+                            continue;
+                        }
+                    } 
+                    if (it->v >= it->left) {
+                        it->v |= it->left;
+                        auto jt = data.end();
+                        if (it != data.begin()) {
+                            jt = it;
+                        }
+                        --jt;
+                        if (it->v >= jt->right) {
+                            it->v |= jt->right;
+                            it->v |= jt->v;
+                            it->left = jt->left;
+                            data.erase(jt);
+                            continue;
+                        }
+                    }
+                    break;
+                }
+                totalr |= it->v;
+            }
+            if (data.size() == 1) return result;
+            for (bit >>= 1; (bit & mask) == 0; bit >>= 1);
+            if (bit & totalr) {
+                for (auto it = data.begin(); it != data.end(); ++it) {
+                    if ((bit & it->v) == 0) it->select = false;
+                }
+            } else {
+                result |= bit;
+            }
         }
-        long long base = 0;
-        while (!q.empty()) {
-            Index now = q.top();
-            q.pop();
-            base = now.first;
-            if (base >= mbase) return mbase;
-            int i = now.second;
-            auto &item = items[i];
-            if (item.i != i) continue;
-            while (true) {
-                auto value = base | item.value;
-                if (item.left == item.right && item.left == i) {
-                    item.value |= challenge[i];
-                    --item.left;
-                    if (item.left < 0) item.left += n;
-                    ++item.right;
-                    if (item.right >= n) item.right -= n;
-                } else if (item.left == item.right && value >= challenge[item.left]) {
-                    return base;
-                } else if (value >= challenge[item.left]) {
-                    item.value |= challenge[item.left];
-                    auto &litem = items[items[item.left].i];
-                    item.value |= litem.value;
-                    litem.i = i;
-                    if (litem.left == item.left) {
-                        items[item.left].i = i;
-                        --item.left;
-                        if (item.left < 0) item.left += n;
-                    } else {
-                        item.left = litem.left;
-                        items[(item.left + 1) % n].i = i;
+        return result;
+    }
+};
+
+// 不是单调的， 
+class Solution1Error {
+public:
+    long long ringGame(vector<long long> &challenge)
+    {
+        long long low = 0, high = *max_element(challenge.begin(), challenge.end());
+        function<bool(int)> ok = [&](int v) {
+            deque<int> x;
+            int last = challenge.size() - 1;
+            for (int i = 0; i <= last; ++i) {
+                if (v < challenge[i]) {
+                    x.push_back(challenge[i]);
+                    continue;
+                }
+                int vv = v | challenge[i];
+                while (true) {
+                    if (i + 1 <= last && challenge[i + 1] <= vv) {
+                        vv |= challenge[++i];
+                        continue;
                     }
-                    if (items[item.left].i == i) return base;
-                } else if (value >= challenge[item.right]) {
-                    item.value |= challenge[item.right];
-                    auto &ritem = items[items[item.right].i];
-                    item.value |= ritem.value;
-                    ritem.i = i;
-                    if (ritem.right == item.right) {
-                        items[item.right].i = i;
-                        ++item.right;
-                        if (item.right >= n) item.right -= n;
-                    } else {
-                        item.right = ritem.right;
-                        items[(item.right + n - 1) % n].i = i;
+                    if (i + 1 > last && !x.empty() && x.front() <= vv) {
+                        vv |= x.front();
+                        x.pop_front();
+                        continue;
                     }
-                    if (items[item.right].i == i) return base;
-                } else {
-                    long long nb1 = get_base(item.value, challenge[item.left], mmask);
-                    long long nb2 = get_base(item.value, challenge[item.right], mmask);
-                    q.push({ min(nb1, nb2), i });
+                    if (!x.empty() && x.back() <= vv) {
+                        vv |= x.back();
+                        x.pop_back();
+                        continue;
+                    }
+                    if (x.empty() && last > i && challenge[last] <= vv) {
+                        vv |= challenge[last--];
+                        continue;
+                    }
+                    x.push_back(vv);
                     break;
                 }
             }
+            return x.size() == 1;
+        };
+
+        while (low + 1 < high) {
+            auto mid = (low + high) / 2;
+            if (ok(mid)) {
+                high = mid;
+            } else {
+                low = mid;
+            }
         }
-        return base;
-    }
-    long long get_base(long long b, long long n, long long mmask)
-    {
-        long long r = 0;
-        // r >= b && (r | b ) >= n
-        for (;  mmask > 0; mmask >>= 1) {
-            if ((mmask & b) == 0 && (mmask & n) == 0) continue;
-            if (r < b && (mmask & b)) r |= mmask;
-            if ((r | b) < n && (mmask & n) && (mmask & b) == 0) r |= mmask;
-            if ((r | b) >= n && r >= b) break;
-        }
-        return r;
+        return high;
     }
 };
 
@@ -159,4 +199,13 @@ TEST_F(TestSolution, Test5)
     decltype(actual) expect = 16;
     EXPECT_EQ(expect, actual);
 }
+TEST_F(TestSolution, TestMain)
+{
+    vector<long long> challenge = { 45,4,45,3 };
+    Solution s;
+    auto actual = s.ringGame(challenge);
+    decltype(actual) expect = 41;
+    EXPECT_EQ(expect, actual);
+}
+
 }

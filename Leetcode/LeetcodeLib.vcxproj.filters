@@ -370,9 +370,6 @@
     <ClCompile Include="1263.minPushBox.cpp">
       <Filter>done</Filter>
     </ClCompile>
-    <ClCompile Include="lcp.49.ringGame.cpp">
-      <Filter>todo</Filter>
-    </ClCompile>
     <ClCompile Include="2661.firstCompleteIndex.cpp">
       <Filter>done</Filter>
     </ClCompile>
@@ -532,9 +529,6 @@
     <ClCompile Include="lcp.31.escapeMaze.cpp">
       <Filter>todo</Filter>
     </ClCompile>
-    <ClCompile Include="lcp.38.guardCastle.cpp">
-      <Filter>done</Filter>
-    </ClCompile>
     <ClCompile Include="2781.longestValidSubstring.cpp">
       <Filter>done</Filter>
     </ClCompile>
@@ -542,12 +536,6 @@
       <Filter>done</Filter>
     </ClCompile>
     <ClCompile Include="2569.handleQuery.cpp">
-      <Filter>done</Filter>
-    </ClCompile>
-    <ClCompile Include="2800.minimumString.cpp">
-      <Filter>todo</Filter>
-    </ClCompile>
-    <ClCompile Include="2801.countSteppingNumbers.cpp">
       <Filter>done</Filter>
     </ClCompile>
     <ClCompile Include="lcp.43.trafficCommand.cpp">
@@ -704,6 +692,39 @@
       <Filter>done</Filter>
     </ClCompile>
     <ClCompile Include="2338.idealArrays.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2322.minimumScore.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2179.goodTriplets.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2223.sumScores.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2227.Encrypter.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2800.minimumString.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2801.countSteppingNumbers.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2267.hasValidPath.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2281.totalStrength.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2286.BookMyShow.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="lcp.38.guardCastle.cpp">
+      <Filter>todo</Filter>
+    </ClCompile>
+    <ClCompile Include="lcp.48.gobang.cpp">
       <Filter>done</Filter>
     </ClCompile>
   </ItemGroup>
