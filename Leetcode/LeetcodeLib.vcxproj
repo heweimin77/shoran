@@ -206,8 +206,13 @@
     <ClCompile Include="2172.maximumANDSum.cpp" />
     <ClCompile Include="2188.minimumFinishTime.cpp" />
     <ClCompile Include="2213.longestRepeating.cpp" />
-    <ClCompile Include="2223.sumScores.cpp" />
     <ClCompile Include="2272.largestVariance.cpp" />
+    <ClCompile Include="2179.goodTriplets.cpp" />
+    <ClCompile Include="2223.sumScores.cpp" />
+    <ClCompile Include="2227.Encrypter.cpp" />
+    <ClCompile Include="2267.hasValidPath.cpp" />
+    <ClCompile Include="2281.totalStrength.cpp" />
+    <ClCompile Include="2286.BookMyShow.cpp" />
     <ClCompile Include="2322.minimumScore.cpp" />
     <ClCompile Include="2338.idealArrays.cpp" />
     <ClCompile Include="2342.maximumSum.cpp" />
@@ -371,7 +376,7 @@
     <ClCompile Include="lcp.41.flipChess.cpp" />
     <ClCompile Include="lcp.42.circleGame.cpp" />
     <ClCompile Include="lcp.43.trafficCommand.cpp" />
-    <ClCompile Include="lcp.49.ringGame.cpp" />
+    <ClCompile Include="lcp.48.gobang.cpp" />
     <ClCompile Include="lcp.53.defendSpaceCity.cpp" />
     <ClCompile Include="lcp.71.reservoir.cpp" />
     <ClCompile Include="lcp.72.supplyWagon.cpp" />

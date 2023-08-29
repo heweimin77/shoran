@@ -142,8 +142,8 @@ inline void output(Stream &os, Container c)
 
 #define EXPECT_EQ_CONTAINER(expect, actual)  \
 { \
-    auto &left = (expect); \
-    auto &right = (actual); \
+    const auto &left = (expect); \
+    const auto &right = (actual); \
     if(left != right) { \
         RecordError(); \
         std::cout << "Assert failed, " \

@@ -20,86 +20,32 @@ using namespace std;
 namespace {
 
 class Solution {
-    using ull = unsigned long long;
-    static constexpr int XCNT = 12;
-    static constexpr int MOVE = 5;
-    static constexpr ull MASK = 0x0FFFFFFFFFFFFFFF;
 public:
-    long long sumScores(string s) {
-        int n = s.size();
-        vector<ull> data(n);
-        ull d = 0;
-        for (int i = 0; i < XCNT; ++i) {
-            d <<= MOVE;
-            if (i < n) {
-                d += s[i] - 'a' + 1;
-            }
-        }
-
-        for (int i = 0; i < n; ++i) {
-            data[i] = d;
-            d <<= MOVE;
-            if (i + XCNT < n) {
-                d += s[i + XCNT] - 'a' + 1;
-            }
-            d &= MASK;
-        }
-
-        vector<ull> target(n / XCNT + 1);
-        for (int i = 0; i * XCNT < n; ++i) {
-            target[i] = data[i * XCNT];
-        }
-        if (target.back() == 0) {
-            target.back() = -1;
-        } else {
-            target.back() |= (1ULL << (XCNT - n % XCNT) * 5) - 1;
-        }
-
-
-        long long result = s.size();
-        for (int i = 1; i < n; ++i) {
-            int j = i;
-            for (int t = 0; j < n; j += XCNT, ++t) {
-                if (data[j] != target[t]) {
-                    result += XCNT * t;
-                    ull d1 = data[j], d2 = target[t];
-                    ull m = 0x1F;
-                    m <<= (XCNT - 1) * MOVE;
-                    for (; (d1 & m) == (d2 & m); m >>= MOVE) {
-                        ++result;
-                    }
-                    break;
-                }
-            }
-            if (j == n) {
-                result += n - i;
-            }
-
-            //if (s[i] == s[0])
-            //    cout << i << ", result, : " << result << endl;
-        }
-        return result;
+    long long sumScores(string s)
+    {
+        vector<int> lcp = getLcp(s);
+        return accumulate(lcp.begin(), lcp.end(), (long long)s.size());
     }
-
-
-};
-
-class Solution1Timeout132of150 {
-//class Solution {
-public:
-    long long sumScores(string s) {
+    vector<int> getLcp(const string &s)
+    {
         int n = s.size();
-        long long result = s.size();
+        vector<int> lcp(n);
+        lcp[0] = 0;
+        int left = 0, right = 0;
         for (int i = 1; i < n; ++i) {
-            int j = i;
-            for (; j < n; ++j) {
-                if (s[j] != s[j - i]) break;
+            //0, right-left = left, right;  i, right ==   i - left ,right - left
+            if (i <= right && i + lcp[i - left] <= right) {
+                lcp[i] = lcp[i - left];
+            } else {
+                int r = max(0, right - i + 1);
+                while (i + r < n && s[i + r] == s[r]) ++r;
+                lcp[i] = r;
+                left = i;
+                right = i + lcp[i] - 1;
             }
-            result += j - i;
-            if (s[i] == s[0])
-                cout << i << ", result, : " << result << endl;
+
         }
-        return result;
+        return lcp;
     }
 };
 
@@ -114,26 +60,12 @@ public:
     }
 };
 
-TEST_F(TestSolution, Test1)
+TEST_F(TestSolution, TestMain)
 {
     Solution s;
     auto actual = s.sumScores("babab");
     decltype(actual) expect = 9;
     EXPECT_EQ(expect, actual);
 }
-TEST_F(TestSolution, Test2)
-{
-    Solution s;
-    auto actual = s.sumScores("xtriayneymcqfmbeutgqmjygybvhpamjmksjtovkxtriayneymcqfmbeutgqmj");
-    decltype(actual) expect = 84;
-    EXPECT_EQ(expect, actual);
-}
-TEST_F(TestSolution, TestMain)
-{
-    Solution s;
-    auto actual = s.sumScores("anpljtlhtcsvfxwthhbpeizuwqvvjjqfqpxfkmwdnzhxqhsmhwfhsiyhrovmrjvvnlzzmgcxosbwcluonynkkhbizlwjzwzboahimyanhpymqhylrieukfkbmrbpgyxmjuoicguufthlfmhqaignscuqptaaxfqixphjwioxjhvubgzamexmooixazvoxotagwawmsgykgpizkpscxlqanpljtlhtcsvfxwthhbpeizuwqvvjjqfqpxfkmwdnzhxqhsmhwfhsiyhrovmrjvvnlzzmgcxosbwcluonynkkhbizlwjzwzboahimyanhpymqhylrieukfkbmrbpgyxmjuoi");
-    decltype(actual) expect = 489;
-    EXPECT_EQ(expect, actual);
 }
 
-}

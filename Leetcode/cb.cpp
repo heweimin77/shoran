@@ -328,3 +328,26 @@ private:
     vector<int> indexes;
     vector<unordered_set<int>> groups;
 };
+
+// 字符串的公共前缀
+vector<int> getLcp(const string &s)
+{
+    int n = s.size();
+    vector<int> lcp(n);
+    lcp[0] = 0;
+    int left = 0, right = 0;
+    for (int i = 1; i < n; ++i) {
+        //0, right-left = left, right;  i, right ==   i - left ,right - left
+        if (i <= right && i + lcp[i - left] <= right) {
+            lcp[i] = lcp[i - left];
+        } else {
+            int r = max(0, right - i + 1);
+            while (i + r < n && s[i + r] == s[r]) ++r;
+            lcp[i] = r;
+            left = i;
+            right = i + lcp[i] - 1;
+        }
+
+    }
+    return lcp;
+}
