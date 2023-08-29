@@ -186,6 +186,7 @@
     <ClCompile Include="1439.kthSmallest.cpp" />
     <ClCompile Include="1483.TreeAncestor.cpp" />
     <ClCompile Include="1494.minNumberOfSemesters.cpp" />
+    <ClCompile Include="1515.getMinDistSum.cpp" />
     <ClCompile Include="1590.minSubarray.cpp" />
     <ClCompile Include="1595.connectTwoGroups.cpp" />
     <ClCompile Include="15threeSum.cpp" />
@@ -197,8 +198,17 @@
     <ClCompile Include="1659.getMaxGridHappiness.cpp" />
     <ClCompile Include="1681.minimumIncompatibility.cpp" />
     <ClCompile Include="16threeSumClosest.cpp" />
+    <ClCompile Include="1782.countPairs.cpp" />
     <ClCompile Include="1851.minInterval.cpp" />
+    <ClCompile Include="1977.numberOfCombinations.cpp" />
+    <ClCompile Include="1982.recoverArray.cpp" />
     <ClCompile Include="2106.maxTotalFruits.cpp" />
+    <ClCompile Include="2172.maximumANDSum.cpp" />
+    <ClCompile Include="2188.minimumFinishTime.cpp" />
+    <ClCompile Include="2213.longestRepeating.cpp" />
+    <ClCompile Include="2223.sumScores.cpp" />
+    <ClCompile Include="2272.largestVariance.cpp" />
+    <ClCompile Include="2322.minimumScore.cpp" />
     <ClCompile Include="2338.idealArrays.cpp" />
     <ClCompile Include="2342.maximumSum.cpp" />
     <ClCompile Include="2348.zeroFilledSubarray.cpp" />
@@ -335,7 +345,10 @@
     <ClCompile Include="2809.minimumTime.cpp" />
     <ClCompile Include="2813.findMaximumElegance.cpp" />
     <ClCompile Include="2818.maximumScore.cpp" />
+    <ClCompile Include="2827.numberOfBeautifulIntegers.cpp" />
+    <ClCompile Include="2831.longestEqualSubarray.cpp" />
     <ClCompile Include="6404.countOperationsToEmptyArray.cpp" />
+    <ClCompile Include="753.crackSafe.cpp" />
     <ClCompile Include="833.findReplaceString.cpp" />
     <ClCompile Include="8myAtoi.cpp" />
     <ClCompile Include="980.uniquePathsIII.cpp" />

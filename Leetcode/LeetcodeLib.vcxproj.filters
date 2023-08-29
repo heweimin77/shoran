@@ -706,6 +706,45 @@
     <ClCompile Include="2338.idealArrays.cpp">
       <Filter>done</Filter>
     </ClCompile>
+    <ClCompile Include="2322.minimumScore.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2831.longestEqualSubarray.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2827.numberOfBeautifulIntegers.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2272.largestVariance.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2223.sumScores.cpp">
+      <Filter>todo</Filter>
+    </ClCompile>
+    <ClCompile Include="2213.longestRepeating.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="1782.countPairs.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2188.minimumFinishTime.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2172.maximumANDSum.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="1515.getMinDistSum.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="753.crackSafe.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="1977.numberOfCombinations.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="1982.recoverArray.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="todo">
