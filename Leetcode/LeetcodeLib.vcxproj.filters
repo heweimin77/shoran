@@ -379,9 +379,6 @@
     <ClCompile Include="lcp.79.extractMantra.cpp">
       <Filter>done</Filter>
     </ClCompile>
-    <ClCompile Include="lcp.82.treeOfInfiniteSouls.cpp">
-      <Filter>todo</Filter>
-    </ClCompile>
     <ClCompile Include="lcp.81.getNandResult.cpp">
       <Filter>done</Filter>
     </ClCompile>
@@ -525,9 +522,6 @@
     </ClCompile>
     <ClCompile Include="1851.minInterval.cpp">
       <Filter>done</Filter>
-    </ClCompile>
-    <ClCompile Include="lcp.31.escapeMaze.cpp">
-      <Filter>todo</Filter>
     </ClCompile>
     <ClCompile Include="2781.longestValidSubstring.cpp">
       <Filter>done</Filter>
@@ -706,9 +700,6 @@
     <ClCompile Include="2272.largestVariance.cpp">
       <Filter>done</Filter>
     </ClCompile>
-    <ClCompile Include="2223.sumScores.cpp">
-      <Filter>todo</Filter>
-    </ClCompile>
     <ClCompile Include="2213.longestRepeating.cpp">
       <Filter>done</Filter>
     </ClCompile>
@@ -758,6 +749,21 @@
       <Filter>todo</Filter>
     </ClCompile>
     <ClCompile Include="lcp.48.gobang.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="lcp.49.ringGame.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2836.getMaxFunctionValue.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="1761.minTrioDegree.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2223.sumScores.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="lcp.82.treeOfInfiniteSouls.cpp">
       <Filter>done</Filter>
     </ClCompile>
   </ItemGroup>

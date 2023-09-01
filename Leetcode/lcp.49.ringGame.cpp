@@ -19,78 +19,61 @@ namespace {
 
 class Solution {
     using ll = long long;
-
-    struct Info {
-        Info(ll d) {
-            left = right = d;
-            v = 0;
-            select = true;
-        }
-        ll left;
-        ll right;
-        ll v;
-        bool select;
-    };
 public:
-    long long ringGame(vector<long long> &challenge)
+    long long ringGame(vector<long long>& challenge)
     {
-        long long mask = 0;
-        for (auto c : challenge) mask |= c;
+        long long result = 0;
+        for (auto c : challenge) result |= c;
         long long highbit = (1LL << 62);
-        while ((highbit & mask) == 0) highbit >>= 1;
-        list<Info> data;
-        for (auto c : challenge) data.emplace_back(c);
-        ll result = highbit;
-        ll bit = highbit;
-        while (data.size() > 1) {
-            ll totalr = 0;
-            for (auto it = data.begin(); it != data.end(); ++it) {
-                if (!it->select) continue;
-                it->v |= result;
-                while (data.size() > 1) {
-                    if (it->v >= it->right) {
-                        it->v |= it->right;
-                        auto jt = it;
-                        if (++jt == data.end()) {
-                            jt = data.begin();
-                        }
-                        if (it->v >= jt->left) {
-                            it->v |= jt->left;
-                            it->v |= jt->v;
-                            it->right = jt->right;
-                            data.erase(jt);
-                            continue;
-                        }
-                    } 
-                    if (it->v >= it->left) {
-                        it->v |= it->left;
-                        auto jt = data.end();
-                        if (it != data.begin()) {
-                            jt = it;
-                        }
-                        --jt;
-                        if (it->v >= jt->right) {
-                            it->v |= jt->right;
-                            it->v |= jt->v;
-                            it->left = jt->left;
-                            data.erase(jt);
-                            continue;
-                        }
-                    }
-                    break;
+        while ((highbit & result) == 0) highbit >>= 1;
+
+        function<bool(ll)> ok = [&](ll r) {
+            deque<ll> x;
+            ll last = r;
+            for (auto c : challenge) {
+                if (c > last) {
+                    x.push_back(last);
+                    x.push_back(c);
+                    last = r;
+                } else {
+                    last |= c;
                 }
-                totalr |= it->v;
+                while (!x.empty() && x.back() <= last) {
+                    last |= x.back();
+                    x.pop_back();
+                }
             }
-            if (data.size() == 1) return result;
-            for (bit >>= 1; (bit & mask) == 0; bit >>= 1);
-            if (bit & totalr) {
-                for (auto it = data.begin(); it != data.end(); ++it) {
-                    if ((bit & it->v) == 0) it->select = false;
+            x.push_back(last);
+            if (x.size() <= 2) return true;
+
+            last = x.front() | x.back();
+            x.pop_front();
+            x.pop_back();
+            while (!x.empty()) {
+                if (last >= x.front()) {
+                    last |= x.front();
+                    x.pop_front();
+                    continue;
                 }
-            } else {
-                result |= bit;
+                if (last >= x.back()) {
+                    last |= x.back();
+                    x.pop_back();
+                    continue;
+                }
+                break;
+            }
+
+            return x.empty();
+        };
+
+        for (highbit >>= 1; highbit; highbit >>= 1) {
+            if ((result & highbit) == 0) continue;
+            ll rr = result & ~highbit;
+            if (ok(rr)) {
+                result = rr;
             }
         }
+
         return result;
     }
 };
