@@ -9,6 +9,7 @@
 #include <algorithm>
 #include <queue>
 #include <numeric>
+#include <functional>
 
 #include "support.h"
 
@@ -17,6 +18,116 @@ using namespace std;
 namespace {
 
 class Solution {
+#define MAKEP(now, x, y, temp, p) ((now << 24) | (x << 16) | (y << 8) | (temp << 4) | (p))
+public:
+    bool escapeMaze(vector<vector<string>> &maze)
+    {
+        unordered_set<int> fails;
+        int delta[5][2] = { {1, 0}, {-1, 0}, {0, 1}, {0, -1}, {0, 0} };
+        int t = maze.size(), m = maze[0].size(), n = maze[0][0].size();
+
+        function<bool(int now, int x, int y, int temp, int p, int px, int py)> dfs = [&](int now, int x, int y, int temp, int p, int px, int py)->bool {
+            int flag = MAKEP(now, x, y, temp, p);
+            if (fails.count(flag) > 0) return false;
+
+            if (x == m - 1 && y == n - 1) {
+                return true;
+            }
+            if (now + 1 >= t) {
+                fails.insert(flag);
+                return false;
+            }
+            for (auto &d : delta) {
+                int nx = x + d[0], ny = y + d[1];
+                if (nx < 0 || ny < 0 || nx >= m || ny >= n) continue;
+                if (maze[now + 1][nx][ny] != '#') {
+                    if (dfs(now + 1, nx, ny, temp, p, px, py)) {
+                        return true;
+                    }
+                } else {
+                    if (nx == px && ny == py) {
+                        if (dfs(now + 1, nx, ny, temp, p, px, py)) {
+                            return true;
+                        }
+                    }
+                    if (temp == 1) {
+                        if (dfs(now + 1, nx, ny, temp - 1, p, px, py)) {
+                            return true;
+                        }
+                    }
+                    if (p == 1) {
+                        if (dfs(now + 1, nx, ny, temp, p - 1, nx, ny)) {
+                            return true;
+                        }
+                    }
+                }
+            }
+            fails.insert(flag);
+            return false;
+        };
+        return dfs(0, 0, 0, 1, 1, -1, -1);
+    }
+};
+
+
+int results[101][51][51][2][2];
+class Solution1 {
+public:
+    bool escapeMaze(vector<vector<string>> &maze)
+    {
+        int delta[5][2] = { {1, 0}, {-1, 0}, {0, 1}, {0, -1}, {0, 0} };
+        int t = maze.size(), m = maze[0].size(), n = maze[0][0].size();
+        memset(results, 0, sizeof(results));
+
+        function<bool(int now, int x, int y, int temp, int p, int px, int py)> dfs = [&](int now, int x, int y, int temp, int p, int px, int py)->bool {
+            if (results[now][x][y][temp][p] > 0) {
+                return results[now][x][y][temp][p] == 1;
+            }
+            if (x == m - 1 && y == n - 1) {
+                results[now][x][y][temp][p] = 1;
+                return true;
+            }
+            if (now + 1 >= t) {
+                results[now][x][y][temp][p] = 2;
+                return false;
+            }
+            for (auto &d : delta) {
+                int nx = x + d[0], ny = y + d[1];
+                if (nx < 0 || ny < 0 || nx >= m || ny >= n) continue;
+                if (maze[now + 1][nx][ny] != '#') {
+                    if (dfs(now + 1, nx, ny, temp, p, px, py)) {
+                        results[now][x][y][temp][p] = 1;
+                        return true;
+                    }
+                } else {
+                    if (nx == px && ny == py) {
+                        if (dfs(now + 1, nx, ny, temp, p, px, py)) {
+                            results[now][x][y][temp][p] = 1;
+                            return true;
+                        }
+                    }
+                    if (temp == 1) {
+                        if (dfs(now + 1, nx, ny, temp - 1, p, px, py)) {
+                            results[now][x][y][temp][p] = 1;
+                            return true;
+                        }
+                    }
+                    if (p == 1) {
+                        if (dfs(now + 1, nx, ny, temp, p - 1, nx, ny)) {
+                            results[now][x][y][temp][p] = 1;
+                            return true;
+                        }
+                    }
+                }
+            }
+            results[now][x][y][temp][p] = 2;
+            return false;
+        };
+        return dfs(0, 0, 0, 1, 1, -1, -1);
+    }
+};
+
+class Solution1Error {
 public:
     bool escapeMaze(vector<vector<string>>& maze) {
         union Pos{
@@ -122,7 +233,7 @@ public:
     }
 };
 
-TEST_F(TestSolution, Test1)
+TEST_F(TestSolution, TestMain)
 {
     vector<vector<string>> maze = {{".#.", "#.."}, { "...", ".#." }, { ".##", ".#." }, { "..#", ".#." }};
     Solution s;
@@ -138,7 +249,7 @@ TEST_F(TestSolution, Test2)
     decltype(actual) expect = false;
     EXPECT_EQ(expect, actual);
 }
-TEST_F(TestSolution, TestMain)
+TEST_F(TestSolution, Test1)
 {
     vector<vector<string>> maze = { {"....###.", "###.#.##", ".##..##."}, {".#####..", "##.####.", "##.####."}, {"....####", "###..###", "##..##.."}, {".####...", "######.#", "###.##.."}, {"..###.##", "########", "#######."}, {"...##.##", "###.####", ".#.#.#.."}, {".######.", "#.#.....", "#.#.#.#."}, {".###.##.", "##.#####", "###.##.."}, {"..#.####", "#####.##", "##.###.."}, {".#.###.#", ".#######", "#####.#."}, {".######.", "####....", ".##..##."}, {".###.#..", "###.#.#.", "#####.#."}, {".###.###", "###.####", "....###."}, {".###.##.", "########", "#####.#."}, {".###.###", "##.####.", ".###...."}, {".#.#.##.", ".##.####", "#####.#."}, {"..#.####", "#.##....", "####...."}, {"..#.##.#", "#.##..#.", "###.###."}, {"..##.#.#", ".##.#..#", ".####..."}, {".##..##.", "########", "#####.#."}, {".####.##", "#.#...##", "#.##..#."}, {"..#.####", "######.#", "###.###."}, {".#..#..#", "###..##.", "#..#...."} };
     Solution s;
