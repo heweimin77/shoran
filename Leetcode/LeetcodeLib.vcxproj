@@ -370,6 +370,7 @@
     <ClCompile Include="lcp.20.busRapidTransit.cpp" />
     <ClCompile Include="lcp.21.chaseGame.cpp" />
     <ClCompile Include="lcp.27.BlackBox.cpp" />
+    <ClCompile Include="lcp.31.escapeMaze.cpp" />
     <ClCompile Include="lcp.35.electricCarPlan.cpp" />
     <ClCompile Include="lcp.36.maxGroupNumber.cpp" />
     <ClCompile Include="lcp.37.minRecSize.cpp" />
@@ -389,7 +390,6 @@
     <ClCompile Include="lcp.80.evolutionaryRecord.cpp" />
     <ClCompile Include="lcp.81.getNandResult.cpp" />
     <ClCompile Include="lcp.82.treeOfInfiniteSouls.cpp" />
-    <ClCompile Include="lcp54.minimumCost.cpp" />
     <ClCompile Include="lcp58.composeCube.cpp" />
     <ClCompile Include="lcp59.buildBridge.cpp" />
     <ClCompile Include="lcp60.getMaxLayerSum.cpp" />

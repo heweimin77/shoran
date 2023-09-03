@@ -109,9 +109,6 @@
     <ClCompile Include="lcp58.composeCube.cpp">
       <Filter>done</Filter>
     </ClCompile>
-    <ClCompile Include="lcp54.minimumCost.cpp">
-      <Filter>todo</Filter>
-    </ClCompile>
     <ClCompile Include="1092.shortestCommonSupersequence.cpp">
       <Filter>done</Filter>
     </ClCompile>
@@ -745,9 +742,6 @@
     <ClCompile Include="2286.BookMyShow.cpp">
       <Filter>done</Filter>
     </ClCompile>
-    <ClCompile Include="lcp.38.guardCastle.cpp">
-      <Filter>todo</Filter>
-    </ClCompile>
     <ClCompile Include="lcp.48.gobang.cpp">
       <Filter>done</Filter>
     </ClCompile>
@@ -764,6 +758,12 @@
       <Filter>done</Filter>
     </ClCompile>
     <ClCompile Include="lcp.82.treeOfInfiniteSouls.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="lcp.31.escapeMaze.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="lcp.38.guardCastle.cpp">
       <Filter>done</Filter>
     </ClCompile>
   </ItemGroup>

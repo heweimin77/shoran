@@ -145,7 +145,7 @@
   <ItemGroup>
     <ClCompile Include="..\gtest\gtest.cpp" />
     <ClCompile Include="cb.cpp" />
-    <ClCompile Include="lcp.31.escapeMaze.cpp" />
+    <ClCompile Include="lcp54.minimumCost.cpp" />
     <ClCompile Include="Leetcode.cpp" />
     <ClCompile Include="support.cpp" />
   </ItemGroup>
