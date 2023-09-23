@@ -766,6 +766,9 @@
     <ClCompile Include="lcp.38.guardCastle.cpp">
       <Filter>done</Filter>
     </ClCompile>
+    <ClCompile Include="lcp54.minimumCost.cpp">
+      <Filter>todo</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="todo">
