@@ -769,6 +769,9 @@
     <ClCompile Include="lcp54.minimumCost.cpp">
       <Filter>todo</Filter>
     </ClCompile>
+    <ClCompile Include="460.LFUCache.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="todo">

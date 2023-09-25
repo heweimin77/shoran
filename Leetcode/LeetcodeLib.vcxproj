@@ -354,6 +354,7 @@
     <ClCompile Include="2827.numberOfBeautifulIntegers.cpp" />
     <ClCompile Include="2831.longestEqualSubarray.cpp" />
     <ClCompile Include="2836.getMaxFunctionValue.cpp" />
+    <ClCompile Include="460.LFUCache.cpp" />
     <ClCompile Include="6404.countOperationsToEmptyArray.cpp" />
     <ClCompile Include="753.crackSafe.cpp" />
     <ClCompile Include="833.findReplaceString.cpp" />
