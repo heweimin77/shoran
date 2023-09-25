@@ -390,6 +390,7 @@
     <ClCompile Include="lcp.80.evolutionaryRecord.cpp" />
     <ClCompile Include="lcp.81.getNandResult.cpp" />
     <ClCompile Include="lcp.82.treeOfInfiniteSouls.cpp" />
+    <ClCompile Include="lcp54.minimumCost.cpp" />
     <ClCompile Include="lcp58.composeCube.cpp" />
     <ClCompile Include="lcp59.buildBridge.cpp" />
     <ClCompile Include="lcp60.getMaxLayerSum.cpp" />
