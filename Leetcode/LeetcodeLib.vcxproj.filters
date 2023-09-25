@@ -772,6 +772,9 @@
     <ClCompile Include="460.LFUCache.cpp">
       <Filter>done</Filter>
     </ClCompile>
+    <ClCompile Include="2851.numberOfWays.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="todo">
