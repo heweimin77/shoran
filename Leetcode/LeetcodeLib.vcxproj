@@ -355,6 +355,8 @@
     <ClCompile Include="2831.longestEqualSubarray.cpp" />
     <ClCompile Include="2836.getMaxFunctionValue.cpp" />
     <ClCompile Include="2851.numberOfWays.cpp" />
+    <ClCompile Include="2858.minEdgeReversals.cpp" />
+    <ClCompile Include="2875.minSizeSubarray.cpp" />
     <ClCompile Include="460.LFUCache.cpp" />
     <ClCompile Include="6404.countOperationsToEmptyArray.cpp" />
     <ClCompile Include="753.crackSafe.cpp" />

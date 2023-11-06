@@ -775,6 +775,12 @@
     <ClCompile Include="2851.numberOfWays.cpp">
       <Filter>done</Filter>
     </ClCompile>
+    <ClCompile Include="2858.minEdgeReversals.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2875.minSizeSubarray.cpp">
+      <Filter>todo</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="todo">
