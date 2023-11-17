@@ -144,7 +144,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\gtest\gtest.cpp" />
-    <ClCompile Include="2127.maximumInvitations.cpp" />
+    <ClCompile Include="1334.findTheCity.cpp" />
     <ClCompile Include="cb.cpp" />
     <ClCompile Include="Leetcode.cpp" />
     <ClCompile Include="support.cpp" />

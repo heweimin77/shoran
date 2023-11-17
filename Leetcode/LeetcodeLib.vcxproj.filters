@@ -781,6 +781,21 @@
     <ClCompile Include="2875.minSizeSubarray.cpp">
       <Filter>todo</Filter>
     </ClCompile>
+    <ClCompile Include="2127.maximumInvitations.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2896.minOperations.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2910.minGroupsForValidAssignment.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2919.minIncrementOperations.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2926.maxBalancedSubsequenceSum.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="todo">

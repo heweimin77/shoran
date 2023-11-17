@@ -204,6 +204,7 @@
     <ClCompile Include="1977.numberOfCombinations.cpp" />
     <ClCompile Include="1982.recoverArray.cpp" />
     <ClCompile Include="2106.maxTotalFruits.cpp" />
+    <ClCompile Include="2127.maximumInvitations.cpp" />
     <ClCompile Include="2172.maximumANDSum.cpp" />
     <ClCompile Include="2188.minimumFinishTime.cpp" />
     <ClCompile Include="2213.longestRepeating.cpp" />
@@ -357,6 +358,10 @@
     <ClCompile Include="2851.numberOfWays.cpp" />
     <ClCompile Include="2858.minEdgeReversals.cpp" />
     <ClCompile Include="2875.minSizeSubarray.cpp" />
+    <ClCompile Include="2896.minOperations.cpp" />
+    <ClCompile Include="2910.minGroupsForValidAssignment.cpp" />
+    <ClCompile Include="2919.minIncrementOperations.cpp" />
+    <ClCompile Include="2926.maxBalancedSubsequenceSum.cpp" />
     <ClCompile Include="460.LFUCache.cpp" />
     <ClCompile Include="6404.countOperationsToEmptyArray.cpp" />
     <ClCompile Include="753.crackSafe.cpp" />

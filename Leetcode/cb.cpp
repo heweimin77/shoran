@@ -13,6 +13,14 @@ using namespace std;
 
 namespace {
 
+class AutoRun {
+public:
+    AutoRun() {
+        
+    }
+
+} autorun;
+
 long long fast_power(long long base, long long n, long long module) {
     long long result = 1;
     int mask = 1;
