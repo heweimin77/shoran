@@ -796,6 +796,12 @@
     <ClCompile Include="2926.maxBalancedSubsequenceSum.cpp">
       <Filter>done</Filter>
     </ClCompile>
+    <ClCompile Include="1334.findTheCity.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
+    <ClCompile Include="2390.stringCount.cpp">
+      <Filter>done</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="todo">
